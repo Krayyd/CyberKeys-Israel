@@ -1,0 +1,30 @@
+{
+  "postedTitles": [
+    "Grand Theft Auto V",
+    "Resident Evil Village",
+    "EA Sports FC 24",
+    "Cyberpunk 2077"
+  ],
+  "history": [
+    {
+      "title": "Grand Theft Auto V",
+      "note": "Опубликовано вручную"
+    },
+    {
+      "title": "Resident Evil Village",
+      "note": "Опубликовано вручную"
+    },
+    {
+      "title": "EA Sports FC 24",
+      "note": "Опубликовано вручную"
+    },
+    {
+      "title": "Weekly Promo Digest (RDR2, Hogwarts Legacy, Cyberpunk 2077, God of War, Witcher 3, MK1)",
+      "note": "Опубликован общий промо-пост с логотипом"
+    },
+    {
+      "title": "Cyberpunk 2077",
+      "note": "Опубликовано через бота @CyberKeysIL_post_bot"
+    }
+  ]
+}

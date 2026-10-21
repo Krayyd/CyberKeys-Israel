@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CyberKeys Israel — Генератор и Автопостер KSP-постов (97 игр)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: #050814;
+        color: #e2e8f0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      }
+      .ksp-preview {
+        direction: rtl;
+        text-align: right;
+        font-family: "Heebo", "Segoe UI", sans-serif;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen pb-16">
+    <header class="sticky top-0 z-30 border-b border-cyan-400/20 bg-[#050814]/90 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-3.5">
+        <div class="flex items-center gap-3">
+          <img src="assets/logo.jpg" alt="" class="h-11 w-11 rounded-full object-cover ring-2 ring-cyan-400/50" />
+          <div>
+            <h1 class="text-base font-extrabold text-white">CyberKeys Israel — Генератор и Автопостер KSP-постов</h1>
+            <p class="text-xs text-slate-400">
+              Уже выложенные 3 игры (GTA V, RE Village, FC 24) помечены как опубликованные · Готово ещё 97 постов
+            </p>
+          </div>
+        </div>
+        <a
+          href="index.html"
+          class="rounded-xl border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-xs font-bold text-cyan-200 hover:bg-cyan-400/20"
+          >← Вернуться в магазин</a
+        >
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 pt-6">
+      <section class="rounded-2xl border border-cyan-400/20 bg-slate-900/70 p-5">
+        <h2 class="text-sm font-bold uppercase tracking-wider text-cyan-300">
+          Настройка автопостинга в @CyberKeys_IL (по желанию)
+        </h2>
+        <p class="mt-1 text-xs leading-relaxed text-slate-300">
+          Вы можете либо копировать готовые посты кнопкой <b>«Скопировать текст для Telegram»</b> (и планировать их через правый клик → <i>Schedule Message</i>), либо вставить токен своего бота от <code>@BotFather</code> (добавленного администратором в <code>@CyberKeys_IL</code>) и отправлять посты с картинкой прямо отсюда в 1 клик.
+        </p>
+        <div class="mt-4 grid gap-3 sm:grid-cols-3">
+          <input
+            id="bot-token"
+            type="password"
+            placeholder="Bot Token от @BotFather"
+            class="rounded-xl border border-white/15 bg-slate-950 px-3.5 py-2 text-xs text-white outline-none focus:border-cyan-400"
+          />
+          <input
+            id="channel-id"
+            type="text"
+            value="@CyberKeys_IL"
+            placeholder="@CyberKeys_IL"
+            class="rounded-xl border border-white/15 bg-slate-950 px-3.5 py-2 text-xs text-white outline-none focus:border-cyan-400"
+          />
+          <div class="flex items-center gap-2">
+            <input
+              id="search-post"
+              type="search"
+              placeholder="Поиск игры..."
+              class="w-full rounded-xl border border-white/15 bg-slate-950 px-3.5 py-2 text-xs text-white outline-none focus:border-cyan-400"
+            />
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-cyan-400/20 bg-slate-950/80 p-3 text-xs">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="font-bold text-cyan-300">Автопостинг по таймеру:</span>
+            <select id="auto-interval" class="rounded-lg border border-white/15 bg-slate-900 px-2.5 py-1.5 text-xs font-bold text-white">
+              <option value="3">Каждые 3 часа</option>
+              <option value="3.5" selected>Каждые 3.5 часа (рекомендуется на старте)</option>
+              <option value="4">Каждые 4 часа</option>
+              <option value="6">Каждые 6 часов</option>
+              <option value="12">Каждые 12 часов (2 раза в день)</option>
+            </select>
+            <button id="toggle-autopost" class="rounded-xl bg-emerald-400 px-3.5 py-1.5 text-xs font-extrabold text-slate-950 hover:bg-emerald-300">
+              ▶ Запустить автопостинг
+            </button>
+            <button id="post-next-now" class="rounded-xl bg-[#2AABEE] px-3.5 py-1.5 text-xs font-extrabold text-white hover:brightness-110">
+              ⚡ Выложить следующую игру сейчас
+            </button>
+          </div>
+          <span id="autopost-status" class="font-bold text-slate-300">Статус: ожидает запуска</span>
+        </div>
+        <div class="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400">
+          <label class="inline-flex cursor-pointer items-center gap-2">
+            <input id="hide-posted" type="checkbox" checked class="rounded border-white/20 bg-slate-900 text-cyan-400" />
+            <span>Скрыть уже выложенные игры</span>
+          </label>
+          <span id="counter" class="font-bold text-cyan-300"></span>
+        </div>
+      </section>
+
+      <div id="posts-grid" class="mt-6 grid gap-5 md:grid-cols-2"></div>
+    </main>
+
+    <script>
+      const ALREADY_POSTED = new Set(
+        JSON.parse(localStorage.getItem("cyberkeys_posted") || '["Grand Theft Auto V","Resident Evil Village","EA Sports FC 24"]')
+      );
+
+      const CATEGORY_EMOJI = {
+        Action: "🔥",
+        RPG: "⚔️",
+        Horror: "🧟‍♂️",
+        Sports: "⚽",
+        Shooter: "🎯",
+        Survival: "🏕️",
+        Adventure: "🗺️",
+        Simulation: "🚜",
+        Strategy: "👑",
+        Racing: "🏎️",
+      };
+
+      const CATEGORY_PITCH_HE = {
+        Action: "אקשן סוחף, קרבות אינטנסיביים וחוויית גיימינג בלתי נשכחת במחשב האישי!",
+        RPG: "עולם עשיר, עלילה עמוקה ועשרות שעות של הרפתקה בגרסת ה-PC המלאה!",
+        Horror: "מתח, הישרדות ואווירה מצמררת בגרסת המחשב הרשמית!",
+        Sports: "חוויית הספורט המובילה בעולם למחשב האישי כולל כל המצבים הרשמיים!",
+        Shooter: "יריות בקצב גבוה, אקשן טקטי וגרפיקה חדה במחשב האישי!",
+        Survival: "בנייה, הישרדות וחקר עולם פתוח לבד או עם חברים באונליין!",
+        Adventure: "סיפור מרגש, עולם מרהיב והרפתקה סוחפת בגרסת המחשב המלאה!",
+        Simulation: "סימולציה מציאותית, שליטה מלאה ומאות שעות של תוכן ב-PC!",
+        Strategy: "טקטיקה, ניהול אימפריה וקרבות ענק בגרסת המחשב הרשמית!",
+        Racing: "מהירות קיצונית, רכבים רשמיים ומסלולים מרהיבים ב-PC!",
+      };
+
+      function savePosted() {
+        localStorage.setItem("cyberkeys_posted", JSON.stringify([...ALREADY_POSTED]));
+      }
+
+      function getBanner(game) {
+        const m = String(game.cover || "").match(/\/steam\/apps\/(\d+)\//);
+        return m ? `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${m[1]}/header.jpg` : game.cover;
+      }
+
+      function makeText(game) {
+        const emoji = CATEGORY_EMOJI[game.category] || "🎮";
+        const pitch = CATEGORY_PITCH_HE[game.category] || "המהדורה המלאה והרשמית למחשב האישי במחיר שובר שוק!";
+        const saved = Math.round(game.officialPrice - game.cyberkeysPrice);
+        const pct = Math.round((saved / game.officialPrice) * 100);
+        return [
+          `${emoji} המשחק ${game.title} למחשב — רק ב-${game.cyberkeysPrice}₪ במקום ~${game.officialPrice}₪~! (חיסכון של ${saved}₪!)`,
+          `${pitch}`,
+          ``,
+          `לרכישה מהירה בהודעה ישירה »`,
+          `https://t.me/Zero_IDD`,
+          `⚡ אספקה דיגיטלית מיידית בצ'אט`,
+          `💳 תשלום נוח ב-Bit או PayBox`,
+          ``,
+          `למה לקנות ב-CyberKeys Israel?`,
+          `✅ מפתח רשמי ומקורי להפעלה ב-${game.platform} (מותאם 100% לישראל ללא VPN)`,
+          `✅ חיסכון של ${pct}% מהמחיר הרשמי בחנות (${game.officialPrice}₪)`,
+          `✅ תמיכה מלאה בעברית וליווי עד שהמשחק פועל אצלכם`,
+          ``,
+          `*בתוקף עד גמר המלאי | מינימום 10 מפתחות במלאי במחיר המבצע`,
+        ].join("\n");
+      }
+
+      function makeHtmlCaption(game) {
+        const emoji = CATEGORY_EMOJI[game.category] || "🎮";
+        const pitch = CATEGORY_PITCH_HE[game.category] || "המהדורה המלאה והרשמית למחשב האישי במחיר שובר שוק!";
+        const saved = Math.round(game.officialPrice - game.cyberkeysPrice);
+        const pct = Math.round((saved / game.officialPrice) * 100);
+        const link = `https://t.me/Zero_IDD?text=${encodeURIComponent(
+          `היי, אני רוצה לקנות את המשחק ${game.title} ב-${game.cyberkeysPrice}₪`
+        )}`;
+        return [
+          `${emoji} <b>המשחק ${game.title} למחשב — רק ב-${game.cyberkeysPrice}₪ במקום <s>${game.officialPrice}₪</s>! (חיסכון של ${saved}₪!)</b>`,
+          `${pitch}`,
+          ``,
+          `לרכישה מהירה בהודעה ישירה »`,
+          `<a href="${link}">לחצו כאן להזמנת ${game.title} ב-${game.cyberkeysPrice}₪ »</a>`,
+          `👉 או שלחו הודעה ל-@Zero_IDD`,
+          `⚡ אספקה דיגיטלית מיידית בצ'אט`,
+          `💳 תשלום נוח ב-Bit או PayBox`,
+          ``,
+          `<b>למה לקנות ב-CyberKeys Israel?</b>`,
+          `✅ מפתח רשמי ומקורי להפעלה ב-${game.platform} (מותאם 100% לישראל ללא VPN)`,
+          `✅ חיסכון של ${pct}% מהמחיר הרשמי בחנות (${game.officialPrice}₪)`,
+          `✅ תמיכה מלאה בעברית וליווי עד שהמשחק פועל אצלכם`,
+          ``,
+          `*בתוקף עד גמר המלאי | מינימום 10 מפתחות במלאי במחיר המבצע`,
+        ].join("\n");
+      }
+
+      let allGames = [];
+      const grid = document.getElementById("posts-grid");
+      const hidePostedEl = document.getElementById("hide-posted");
+      const searchEl = document.getElementById("search-post");
+      const counterEl = document.getElementById("counter");
+
+      function render() {
+        const q = searchEl.value.trim().toLowerCase();
+        const hidePosted = hidePostedEl.checked;
+        const list = allGames.filter((g) => {
+          if (hidePosted && ALREADY_POSTED.has(g.title)) return false;
+          if (q && !g.title.toLowerCase().includes(q)) return false;
+          return true;
+        });
+
+        counterEl.textContent = `Показано постов: ${list.length} из ${allGames.length}`;
+        grid.replaceChildren();
+
+        list.forEach((game) => {
+          const banner = getBanner(game);
+          const text = makeText(game);
+          const isPosted = ALREADY_POSTED.has(game.title);
+
+          const card = document.createElement("article");
+          card.className = "flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900/90";
+          card.innerHTML = `
+            <div class="relative aspect-[460/215] bg-slate-950">
+              <img src="${banner}" loading="lazy" alt="${game.title}" class="h-full w-full object-cover" />
+              <span class="absolute left-3 top-3 rounded-full bg-slate-950/85 px-2.5 py-1 text-xs font-bold text-cyan-300">
+                ₪${game.cyberkeysPrice} במקום ₪${game.officialPrice}
+              </span>
+              <span data-status class="absolute right-3 top-3 rounded-full px-2.5 py-1 text-xs font-bold ${
+                isPosted ? "bg-emerald-500/90 text-slate-950" : "bg-slate-950/85 text-slate-300"
+              }">
+                ${isPosted ? "✓ Опубликовано" : "Готов к публикации"}
+              </span>
+            </div>
+            <div class="flex flex-1 flex-col p-4">
+              <div class="mb-2 flex items-center justify-between gap-2">
+                <h3 class="font-bold text-white">${game.title}</h3>
+                <a href="${banner}" target="_blank" rel="noopener" class="text-xs font-semibold text-cyan-300 hover:underline">Открыть фото (460×215) ↗</a>
+              </div>
+              <pre class="ksp-preview flex-1 rounded-xl border border-white/10 bg-slate-950 p-3 text-xs leading-relaxed text-slate-200">${text}</pre>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <button data-copy class="flex-1 rounded-xl bg-cyan-400 px-3 py-2 text-xs font-extrabold text-slate-950 hover:bg-cyan-300">
+                  Скопировать текст KSP
+                </button>
+                <button data-send class="rounded-xl bg-[#2AABEE] px-3 py-2 text-xs font-extrabold text-white hover:brightness-110">
+                  Отправить через бота
+                </button>
+                <button data-toggle class="rounded-xl border border-white/15 px-3 py-2 text-xs font-semibold text-slate-300 hover:bg-white/5">
+                  ${isPosted ? "Вернуть в очередь" : "Отметить выложенным"}
+                </button>
+              </div>
+            </div>
+          `;
+
+          card.querySelector("[data-copy]").addEventListener("click", async (e) => {
+            await navigator.clipboard.writeText(text);
+            e.target.textContent = "✓ Скопировано!";
+            setTimeout(() => (e.target.textContent = "Скопировать текст KSP"), 1500);
+          });
+
+          card.querySelector("[data-toggle]").addEventListener("click", () => {
+            if (ALREADY_POSTED.has(game.title)) ALREADY_POSTED.delete(game.title);
+            else ALREADY_POSTED.add(game.title);
+            savePosted();
+            render();
+          });
+
+          card.querySelector("[data-send]").addEventListener("click", async (e) => {
+            const token = document.getElementById("bot-token").value.trim();
+            const channel = document.getElementById("channel-id").value.trim() || "@CyberKeys_IL";
+            if (!token) {
+              alert("Сначала вставьте Bot Token от @BotFather в верхнее поле (или используйте кнопку «Скопировать текст KSP»).");
+              return;
+            }
+            const btn = e.target;
+            btn.disabled = true;
+            btn.textContent = "Отправка...";
+            try {
+              const res = await fetch(`https://api.telegram.org/bot${token}/sendPhoto`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  chat_id: channel,
+                  photo: banner,
+                  caption: makeHtmlCaption(game),
+                  parse_mode: "HTML",
+                }),
+              });
+              const data = await res.json();
+              if (!data.ok) throw new Error(data.description || "Ошибка Telegram API");
+              ALREADY_POSTED.add(game.title);
+              savePosted();
+              btn.textContent = "✓ Опубликовано!";
+              setTimeout(() => render(), 900);
+            } catch (err) {
+              alert("Ошибка отправки: " + err.message);
+              btn.disabled = false;
+              btn.textContent = "Отправить через бота";
+            }
+          });
+
+          grid.append(card);
+        });
+      }
+
+      hidePostedEl.addEventListener("change", render);
+      searchEl.addEventListener("input", render);
+
+      let autoTimer = null;
+      let countdownTimer = null;
+      let nextRunAt = 0;
+
+      const toggleAutoBtn = document.getElementById("toggle-autopost");
+      const postNextBtn = document.getElementById("post-next-now");
+      const autoStatusEl = document.getElementById("autopost-status");
+      const intervalSelectEl = document.getElementById("auto-interval");
+
+      async function publishGame(game) {
+        const token = document.getElementById("bot-token").value.trim();
+        const channel = document.getElementById("channel-id").value.trim() || "@CyberKeys_IL";
+        const banner = getBanner(game);
+        const res = await fetch(`https://api.telegram.org/bot${token}/sendPhoto`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: channel,
+            photo: banner,
+            caption: makeHtmlCaption(game),
+            parse_mode: "HTML",
+          }),
+        });
+        const data = await res.json();
+        if (!data.ok) throw new Error(data.description || "Ошибка Telegram API");
+        ALREADY_POSTED.add(game.title);
+        savePosted();
+        render();
+        return data.result;
+      }
+
+      async function publishNextInQueue() {
+        const nextGame = allGames.find((g) => !ALREADY_POSTED.has(g.title));
+        if (!nextGame) {
+          autoStatusEl.textContent = "Все 100 игр опубликованы!";
+          stopAuto();
+          return null;
+        }
+        autoStatusEl.textContent = `Публикация: ${nextGame.title}...`;
+        await publishGame(nextGame);
+        autoStatusEl.textContent = `✓ Выложено: ${nextGame.title}`;
+        return nextGame;
+      }
+
+      function updateCountdown() {
+        if (!autoTimer) return;
+        const diffSec = Math.max(0, Math.floor((nextRunAt - Date.now()) / 1000));
+        const h = Math.floor(diffSec / 3600);
+        const m = Math.floor((diffSec % 3600) / 60);
+        const s = diffSec % 60;
+        const nextGame = allGames.find((g) => !ALREADY_POSTED.has(g.title));
+        autoStatusEl.textContent = nextGame
+          ? `🟢 Автопостинг активен · След.: ${nextGame.title} через ${h}ч ${m}м ${s}с`
+          : "Все игры выложены!";
+      }
+
+      function stopAuto() {
+        if (autoTimer) clearInterval(autoTimer);
+        if (countdownTimer) clearInterval(countdownTimer);
+        autoTimer = null;
+        countdownTimer = null;
+        toggleAutoBtn.textContent = "▶ Запустить автопостинг";
+        toggleAutoBtn.className = "rounded-xl bg-emerald-400 px-3.5 py-1.5 text-xs font-extrabold text-slate-950 hover:bg-emerald-300";
+      }
+
+      function startAuto() {
+        const hours = Number(intervalSelectEl.value) || 3.5;
+        const ms = hours * 3600 * 1000;
+        nextRunAt = Date.now() + ms;
+        toggleAutoBtn.textContent = "⏹ Остановить автопостинг";
+        toggleAutoBtn.className = "rounded-xl bg-rose-400 px-3.5 py-1.5 text-xs font-extrabold text-slate-950 hover:bg-rose-300";
+        updateCountdown();
+        countdownTimer = setInterval(updateCountdown, 1000);
+        autoTimer = setInterval(async () => {
+          try {
+            await publishNextInQueue();
+            nextRunAt = Date.now() + ms;
+          } catch (err) {
+            autoStatusEl.textContent = "Ошибка: " + err.message;
+          }
+        }, ms);
+      }
+
+      toggleAutoBtn.addEventListener("click", () => {
+        if (autoTimer) {
+          stopAuto();
+          autoStatusEl.textContent = "Статус: остановлен";
+        } else {
+          startAuto();
+        }
+      });
+
+      postNextBtn.addEventListener("click", async () => {
+        postNextBtn.disabled = true;
+        try {
+          await publishNextInQueue();
+        } catch (err) {
+          alert("Ошибка: " + err.message);
+        } finally {
+          postNextBtn.disabled = false;
+        }
+      });
+
+      fetch("games.json")
+        .then((r) => r.json())
+        .then((data) => {
+          allGames = data;
+          render();
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,902 @@
+[
+  {
+    "title": "Grand Theft Auto V",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/library_600x900.jpg",
+    "platform": "Rockstar",
+    "officialPrice": 113,
+    "cyberkeysPrice": 69,
+    "steamUrl": "https://store.steampowered.com/app/3240220/"
+  },
+  {
+    "title": "Cyberpunk 2077",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 249,
+    "cyberkeysPrice": 145,
+    "steamUrl": "https://store.steampowered.com/app/1091500/"
+  },
+  {
+    "title": "Resident Evil Village",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1196590/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 150,
+    "cyberkeysPrice": 65,
+    "steamUrl": "https://store.steampowered.com/app/1196590/"
+  },
+  {
+    "title": "EA Sports FC 24",
+    "category": "Sports",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2195250/library_600x900.jpg",
+    "platform": "EA",
+    "officialPrice": 249,
+    "cyberkeysPrice": 79,
+    "steamUrl": "https://store.steampowered.com/app/2195250/"
+  },
+  {
+    "title": "Red Dead Redemption 2",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900.jpg",
+    "platform": "Rockstar",
+    "officialPrice": 230,
+    "cyberkeysPrice": 85,
+    "steamUrl": "https://store.steampowered.com/app/1174180/"
+  },
+  {
+    "title": "Hogwarts Legacy",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 239,
+    "cyberkeysPrice": 75,
+    "steamUrl": "https://store.steampowered.com/app/990080/"
+  },
+  {
+    "title": "Elden Ring",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 249,
+    "cyberkeysPrice": 209,
+    "steamUrl": "https://store.steampowered.com/app/1245620/"
+  },
+  {
+    "title": "God of War (2018)",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 199,
+    "cyberkeysPrice": 109,
+    "steamUrl": "https://store.steampowered.com/app/1593500/"
+  },
+  {
+    "title": "God of War Ragnarök",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 239,
+    "cyberkeysPrice": 189,
+    "steamUrl": "https://store.steampowered.com/app/2322010/"
+  },
+  {
+    "title": "Marvel's Spider-Man Remastered",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 239,
+    "cyberkeysPrice": 129,
+    "steamUrl": "https://store.steampowered.com/app/1817070/"
+  },
+  {
+    "title": "Marvel's Spider-Man: Miles Morales",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817190/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 199,
+    "cyberkeysPrice": 109,
+    "steamUrl": "https://store.steampowered.com/app/1817190/"
+  },
+  {
+    "title": "Horizon Zero Dawn",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2561580/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 199,
+    "cyberkeysPrice": 155,
+    "steamUrl": "https://store.steampowered.com/app/2561580/"
+  },
+  {
+    "title": "Horizon Forbidden West",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2420110/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 239,
+    "cyberkeysPrice": 175,
+    "steamUrl": "https://store.steampowered.com/app/2420110/"
+  },
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 187,
+    "cyberkeysPrice": 85,
+    "steamUrl": "https://store.steampowered.com/app/292030/"
+  },
+  {
+    "title": "Mortal Kombat 1",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1971870/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 187,
+    "cyberkeysPrice": 79,
+    "steamUrl": "https://store.steampowered.com/app/1971870/"
+  },
+  {
+    "title": "Tekken 8",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1778820/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 159,
+    "cyberkeysPrice": 125,
+    "steamUrl": "https://store.steampowered.com/app/1778820/"
+  },
+  {
+    "title": "Helldivers 2",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 179,
+    "cyberkeysPrice": 145,
+    "steamUrl": "https://store.steampowered.com/app/553850/"
+  },
+  {
+    "title": "Forza Horizon 5",
+    "category": "Racing",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 249,
+    "cyberkeysPrice": 159,
+    "steamUrl": "https://store.steampowered.com/app/1551360/"
+  },
+  {
+    "title": "Rust",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 189,
+    "cyberkeysPrice": 149,
+    "steamUrl": "https://store.steampowered.com/app/252490/"
+  },
+  {
+    "title": "DayZ",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221100/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 200,
+    "cyberkeysPrice": 165,
+    "steamUrl": "https://store.steampowered.com/app/221100/"
+  },
+  {
+    "title": "It Takes Two",
+    "category": "Adventure",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 169,
+    "cyberkeysPrice": 105,
+    "steamUrl": "https://store.steampowered.com/app/1426210/"
+  },
+  {
+    "title": "Fallout 4",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 99,
+    "cyberkeysPrice": 65,
+    "steamUrl": "https://store.steampowered.com/app/377160/"
+  },
+  {
+    "title": "The Elder Scrolls V: Skyrim Special Edition",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 155,
+    "cyberkeysPrice": 79,
+    "steamUrl": "https://store.steampowered.com/app/489830/"
+  },
+  {
+    "title": "No Man's Sky",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 225,
+    "cyberkeysPrice": 109,
+    "steamUrl": "https://store.steampowered.com/app/275850/"
+  },
+  {
+    "title": "Baldur's Gate 3",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 269,
+    "cyberkeysPrice": 239,
+    "steamUrl": "https://store.steampowered.com/app/1086940/"
+  },
+  {
+    "title": "Palworld",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 179,
+    "cyberkeysPrice": 140,
+    "steamUrl": "https://store.steampowered.com/app/1623730/"
+  },
+  {
+    "title": "Lethal Company",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 109,
+    "cyberkeysPrice": 69,
+    "steamUrl": "https://store.steampowered.com/app/1966720/"
+  },
+  {
+    "title": "Terraria",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 79,
+    "cyberkeysPrice": 60,
+    "steamUrl": "https://store.steampowered.com/app/105600/"
+  },
+  {
+    "title": "Stardew Valley",
+    "category": "Simulation",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 129,
+    "cyberkeysPrice": 95,
+    "steamUrl": "https://store.steampowered.com/app/413150/"
+  },
+  {
+    "title": "Hades",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 139,
+    "cyberkeysPrice": 105,
+    "steamUrl": "https://store.steampowered.com/app/1145360/"
+  },
+  {
+    "title": "Hades II",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 159,
+    "cyberkeysPrice": 125,
+    "steamUrl": "https://store.steampowered.com/app/1145350/"
+  },
+  {
+    "title": "Dead Cells",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 94,
+    "cyberkeysPrice": 55,
+    "steamUrl": "https://store.steampowered.com/app/588650/"
+  },
+  {
+    "title": "Hollow Knight",
+    "category": "Adventure",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 109,
+    "cyberkeysPrice": 69,
+    "steamUrl": "https://store.steampowered.com/app/367520/"
+  },
+  {
+    "title": "Subnautica",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 120,
+    "cyberkeysPrice": 55,
+    "steamUrl": "https://store.steampowered.com/app/264710/"
+  },
+  {
+    "title": "Subnautica: Below Zero",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 120,
+    "cyberkeysPrice": 85,
+    "steamUrl": "https://store.steampowered.com/app/848450/"
+  },
+  {
+    "title": "Dying Light 2 Stay Human",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/534380/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 249,
+    "cyberkeysPrice": 79,
+    "steamUrl": "https://store.steampowered.com/app/534380/"
+  },
+  {
+    "title": "Dying Light",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 96,
+    "cyberkeysPrice": 55,
+    "steamUrl": "https://store.steampowered.com/app/239140/"
+  },
+  {
+    "title": "Resident Evil 4 Remake",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 159,
+    "cyberkeysPrice": 75,
+    "steamUrl": "https://store.steampowered.com/app/2050650/"
+  },
+  {
+    "title": "Resident Evil 2 Remake",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/883710/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 159,
+    "cyberkeysPrice": 79,
+    "steamUrl": "https://store.steampowered.com/app/883710/"
+  },
+  {
+    "title": "Resident Evil 3 Remake",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/952060/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 159,
+    "cyberkeysPrice": 69,
+    "steamUrl": "https://store.steampowered.com/app/952060/"
+  },
+  {
+    "title": "Resident Evil 7: Biohazard",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/418370/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 79,
+    "cyberkeysPrice": 60,
+    "steamUrl": "https://store.steampowered.com/app/418370/"
+  },
+  {
+    "title": "Devil May Cry 5",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601150/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 119,
+    "cyberkeysPrice": 59,
+    "steamUrl": "https://store.steampowered.com/app/601150/"
+  },
+  {
+    "title": "Monster Hunter: World",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582010/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 119,
+    "cyberkeysPrice": 65,
+    "steamUrl": "https://store.steampowered.com/app/582010/"
+  },
+  {
+    "title": "Monster Hunter Wilds",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 199,
+    "cyberkeysPrice": 165,
+    "steamUrl": "https://store.steampowered.com/app/2246340/"
+  },
+  {
+    "title": "Doom Eternal",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/782330/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 119,
+    "cyberkeysPrice": 69,
+    "steamUrl": "https://store.steampowered.com/app/782330/"
+  },
+  {
+    "title": "Fallout 76",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151340/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 172,
+    "cyberkeysPrice": 69,
+    "steamUrl": "https://store.steampowered.com/app/1151340/"
+  },
+  {
+    "title": "Cities: Skylines II",
+    "category": "Simulation",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/949230/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 193,
+    "cyberkeysPrice": 155,
+    "steamUrl": "https://store.steampowered.com/app/949230/"
+  },
+  {
+    "title": "The Sims 4",
+    "category": "Simulation",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222670/library_600x900.jpg",
+    "platform": "EA",
+    "officialPrice": 119,
+    "cyberkeysPrice": 79,
+    "steamUrl": "https://store.steampowered.com/app/1222670/"
+  },
+  {
+    "title": "Halo Infinite",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1240440/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 249,
+    "cyberkeysPrice": 105,
+    "steamUrl": "https://store.steampowered.com/app/1240440/"
+  },
+  {
+    "title": "Garry's Mod",
+    "category": "Simulation",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 79,
+    "cyberkeysPrice": 59,
+    "steamUrl": "https://store.steampowered.com/app/4000/"
+  },
+  {
+    "title": "Ark: Survival Ascended",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2399830/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 180,
+    "cyberkeysPrice": 85,
+    "steamUrl": "https://store.steampowered.com/app/2399830/"
+  },
+  {
+    "title": "Sea of Thieves",
+    "category": "Adventure",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 209,
+    "cyberkeysPrice": 119,
+    "steamUrl": "https://store.steampowered.com/app/1172620/"
+  },
+  {
+    "title": "Hunt: Showdown 1896",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 112,
+    "cyberkeysPrice": 75,
+    "steamUrl": "https://store.steampowered.com/app/594650/"
+  },
+  {
+    "title": "Tom Clancy's Rainbow Six Siege",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 109,
+    "cyberkeysPrice": 75,
+    "steamUrl": "https://store.steampowered.com/app/359550/"
+  },
+  {
+    "title": "Destiny 2",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 278,
+    "cyberkeysPrice": 119,
+    "steamUrl": "https://store.steampowered.com/app/1085660/"
+  },
+  {
+    "title": "Sekiro: Shadows Die Twice",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 225,
+    "cyberkeysPrice": 155,
+    "steamUrl": "https://store.steampowered.com/app/814380/"
+  },
+  {
+    "title": "Dark Souls III",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/374320/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 225,
+    "cyberkeysPrice": 139,
+    "steamUrl": "https://store.steampowered.com/app/374320/"
+  },
+  {
+    "title": "Dark Souls Remastered",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570940/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 150,
+    "cyberkeysPrice": 109,
+    "steamUrl": "https://store.steampowered.com/app/570940/"
+  },
+  {
+    "title": "Persona 5 Royal",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 239,
+    "cyberkeysPrice": 99,
+    "steamUrl": "https://store.steampowered.com/app/1687950/"
+  },
+  {
+    "title": "Persona 3 Reload",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2161700/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 239,
+    "cyberkeysPrice": 109,
+    "steamUrl": "https://store.steampowered.com/app/2161700/"
+  },
+  {
+    "title": "Yakuza: Like a Dragon",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1235140/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 79,
+    "cyberkeysPrice": 59,
+    "steamUrl": "https://store.steampowered.com/app/1235140/"
+  },
+  {
+    "title": "Like a Dragon: Infinite Wealth",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2072450/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 279,
+    "cyberkeysPrice": 69,
+    "steamUrl": "https://store.steampowered.com/app/2072450/"
+  },
+  {
+    "title": "NieR: Automata",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/524220/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 150,
+    "cyberkeysPrice": 99,
+    "steamUrl": "https://store.steampowered.com/app/524220/"
+  },
+  {
+    "title": "Final Fantasy VII Remake Intergrade",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1462040/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 159,
+    "cyberkeysPrice": 89,
+    "steamUrl": "https://store.steampowered.com/app/1462040/"
+  },
+  {
+    "title": "Starfield",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1716740/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 229,
+    "cyberkeysPrice": 195,
+    "steamUrl": "https://store.steampowered.com/app/1716740/"
+  },
+  {
+    "title": "Star Wars Jedi: Survivor",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1774580/library_600x900.jpg",
+    "platform": "EA",
+    "officialPrice": 289,
+    "cyberkeysPrice": 125,
+    "steamUrl": "https://store.steampowered.com/app/1774580/"
+  },
+  {
+    "title": "Star Wars Jedi: Fallen Order",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172380/library_600x900.jpg",
+    "platform": "EA",
+    "officialPrice": 169,
+    "cyberkeysPrice": 59,
+    "steamUrl": "https://store.steampowered.com/app/1172380/"
+  },
+  {
+    "title": "Dead Space Remake",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1693980/library_600x900.jpg",
+    "platform": "EA",
+    "officialPrice": 249,
+    "cyberkeysPrice": 119,
+    "steamUrl": "https://store.steampowered.com/app/1693980/"
+  },
+  {
+    "title": "Alan Wake 2",
+    "category": "Horror",
+    "cover": "https://cdn1.epicgames.com/offer/c4763f236d08423eb47b4c3008779c84/EGS_AlanWake2_RemedyEntertainment_S2_1200x1600-c7c8091ddac0f9669c8e5905bca88aaa",
+    "platform": "Epic",
+    "officialPrice": 209,
+    "cyberkeysPrice": 175,
+    "steamUrl": "https://store.epicgames.com/en-US/p/alan-wake-2"
+  },
+  {
+    "title": "The Outlast Trials",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1304930/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 150,
+    "cyberkeysPrice": 89,
+    "steamUrl": "https://store.steampowered.com/app/1304930/"
+  },
+  {
+    "title": "Phasmophobia",
+    "category": "Horror",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 119,
+    "cyberkeysPrice": 85,
+    "steamUrl": "https://store.steampowered.com/app/739630/"
+  },
+  {
+    "title": "Sons of the Forest",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 179,
+    "cyberkeysPrice": 145,
+    "steamUrl": "https://store.steampowered.com/app/1326470/"
+  },
+  {
+    "title": "Raft",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 139,
+    "cyberkeysPrice": 105,
+    "steamUrl": "https://store.steampowered.com/app/648800/"
+  },
+  {
+    "title": "The Forest",
+    "category": "Survival",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242760/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 139,
+    "cyberkeysPrice": 100,
+    "steamUrl": "https://store.steampowered.com/app/242760/"
+  },
+  {
+    "title": "Left 4 Dead 2",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 99,
+    "cyberkeysPrice": 65,
+    "steamUrl": "https://store.steampowered.com/app/550/"
+  },
+  {
+    "title": "Borderlands 3",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/397540/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 240,
+    "cyberkeysPrice": 69,
+    "steamUrl": "https://store.steampowered.com/app/397540/"
+  },
+  {
+    "title": "Tiny Tina's Wonderlands",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286680/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 113,
+    "cyberkeysPrice": 49,
+    "steamUrl": "https://store.steampowered.com/app/1286680/"
+  },
+  {
+    "title": "BioShock Infinite",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8870/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 112,
+    "cyberkeysPrice": 49,
+    "steamUrl": "https://store.steampowered.com/app/8870/"
+  },
+  {
+    "title": "Dishonored 2",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/403640/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 119,
+    "cyberkeysPrice": 49,
+    "steamUrl": "https://store.steampowered.com/app/403640/"
+  },
+  {
+    "title": "Prey",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/480490/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 119,
+    "cyberkeysPrice": 49,
+    "steamUrl": "https://store.steampowered.com/app/480490/"
+  },
+  {
+    "title": "Control",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/870780/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 150,
+    "cyberkeysPrice": 65,
+    "steamUrl": "https://store.steampowered.com/app/870780/"
+  },
+  {
+    "title": "Death Stranding",
+    "category": "Adventure",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850570/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 172,
+    "cyberkeysPrice": 69,
+    "steamUrl": "https://store.steampowered.com/app/1850570/"
+  },
+  {
+    "title": "Detroit: Become Human",
+    "category": "Adventure",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 159,
+    "cyberkeysPrice": 59,
+    "steamUrl": "https://store.steampowered.com/app/1222140/"
+  },
+  {
+    "title": "Heavy Rain",
+    "category": "Adventure",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960910/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 79,
+    "cyberkeysPrice": 49,
+    "steamUrl": "https://store.steampowered.com/app/960910/"
+  },
+  {
+    "title": "Beyond: Two Souls",
+    "category": "Adventure",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 79,
+    "cyberkeysPrice": 49,
+    "steamUrl": "https://store.steampowered.com/app/960990/"
+  },
+  {
+    "title": "Mafia: Definitive Edition",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030840/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 168,
+    "cyberkeysPrice": 59,
+    "steamUrl": "https://store.steampowered.com/app/1030840/"
+  },
+  {
+    "title": "L.A. Noire",
+    "category": "Adventure",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/110800/library_600x900.jpg",
+    "platform": "Rockstar",
+    "officialPrice": 79,
+    "cyberkeysPrice": 55,
+    "steamUrl": "https://store.steampowered.com/app/110800/"
+  },
+  {
+    "title": "Max Payne 3",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/204100/library_600x900.jpg",
+    "platform": "Rockstar",
+    "officialPrice": 79,
+    "cyberkeysPrice": 49,
+    "steamUrl": "https://store.steampowered.com/app/204100/"
+  },
+  {
+    "title": "Hitman World of Assassination",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1659040/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 159,
+    "cyberkeysPrice": 125,
+    "steamUrl": "https://store.steampowered.com/app/1659040/"
+  },
+  {
+    "title": "Assassin's Creed Valhalla",
+    "category": "RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 239,
+    "cyberkeysPrice": 85,
+    "steamUrl": "https://store.steampowered.com/app/2208920/"
+  },
+  {
+    "title": "Assassin's Creed Mirage",
+    "category": "Action",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3035570/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 199,
+    "cyberkeysPrice": 109,
+    "steamUrl": "https://store.steampowered.com/app/3035570/"
+  },
+  {
+    "title": "Far Cry 6",
+    "category": "Shooter",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2369390/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 239,
+    "cyberkeysPrice": 89,
+    "steamUrl": "https://store.steampowered.com/app/2369390/"
+  },
+  {
+    "title": "Mount & Blade II: Bannerlord",
+    "category": "Strategy",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/261550/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 190,
+    "cyberkeysPrice": 109,
+    "steamUrl": "https://store.steampowered.com/app/261550/"
+  },
+  {
+    "title": "Civilization VI",
+    "category": "Strategy",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 225,
+    "cyberkeysPrice": 59,
+    "steamUrl": "https://store.steampowered.com/app/289070/"
+  },
+  {
+    "title": "Age of Empires IV",
+    "category": "Strategy",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 150,
+    "cyberkeysPrice": 99,
+    "steamUrl": "https://store.steampowered.com/app/1466860/"
+  },
+  {
+    "title": "Total War: Warhammer III",
+    "category": "Strategy",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1142710/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 250,
+    "cyberkeysPrice": 89,
+    "steamUrl": "https://store.steampowered.com/app/1142710/"
+  },
+  {
+    "title": "Euro Truck Simulator 2",
+    "category": "Simulation",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 109,
+    "cyberkeysPrice": 75,
+    "steamUrl": "https://store.steampowered.com/app/227300/"
+  },
+  {
+    "title": "Microsoft Flight Simulator",
+    "category": "Simulation",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 269,
+    "cyberkeysPrice": 165,
+    "steamUrl": "https://store.steampowered.com/app/1250410/"
+  },
+  {
+    "title": "Assetto Corsa",
+    "category": "Racing",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244210/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 79,
+    "cyberkeysPrice": 49,
+    "steamUrl": "https://store.steampowered.com/app/244210/"
+  },
+  {
+    "title": "NBA 2K24",
+    "category": "Sports",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2338770/library_600x900.jpg",
+    "platform": "Steam",
+    "officialPrice": 239,
+    "cyberkeysPrice": 85,
+    "steamUrl": "https://store.steampowered.com/app/2338770/"
+  }
+]

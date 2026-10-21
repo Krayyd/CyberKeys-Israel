@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CyberKeys Israel | חנות משחקי מחשב</title>
+    <meta
+      name="description"
+      content="CyberKeys Israel מוכרת מפתחות רשמיים ל-100 משחקי PC במחיר נמוך בהרבה מ-Steam, Epic, EA ו-Rockstar. אספקה מיידית ב-Telegram או WhatsApp."
+    />
+    <meta name="theme-color" content="#04060f" />
+    <link rel="icon" href="assets/logo.jpg" />
+    <meta property="og:title" content="CyberKeys Israel" />
+    <meta
+      property="og:description"
+      content="מפתחות רשמיים למשחקי PC במחיר נמוך, עם אספקה מיידית ב-Telegram או WhatsApp."
+    />
+    <meta property="og:image" content="assets/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=Orbitron:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        min-height: 100vh;
+        font-family: Heebo, "Segoe UI", sans-serif;
+        color: #e2e8f0;
+        background-color: #04060f;
+        background-image:
+          radial-gradient(980px 480px at 100% -10%, rgba(34, 211, 238, 0.16), transparent 55%),
+          radial-gradient(760px 420px at 0% 8%, rgba(168, 85, 247, 0.14), transparent 52%),
+          linear-gradient(rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(148, 163, 184, 0.045) 1px, transparent 1px);
+        background-size: auto, auto, 56px 56px, 56px 56px;
+      }
+
+      .font-display {
+        font-family: Orbitron, Heebo, sans-serif;
+      }
+
+      ::selection {
+        background: rgba(34, 211, 238, 0.35);
+        color: white;
+      }
+
+      :focus-visible {
+        outline: 2px solid #67f3ff;
+        outline-offset: 3px;
+      }
+
+      .logo-frame {
+        border-radius: 9999px;
+        animation: logo-glow 4.8s ease-in-out infinite;
+      }
+
+      @keyframes logo-glow {
+        0%,
+        100% {
+          box-shadow:
+            0 0 0 1px rgba(103, 243, 255, 0.4),
+            0 0 42px rgba(34, 211, 238, 0.28),
+            0 0 90px rgba(168, 85, 247, 0.16);
+        }
+        50% {
+          box-shadow:
+            0 0 0 1px rgba(192, 132, 252, 0.55),
+            0 0 58px rgba(168, 85, 247, 0.36),
+            0 0 110px rgba(34, 211, 238, 0.2);
+        }
+      }
+
+      .game-card {
+        background: linear-gradient(180deg, rgba(12, 18, 40, 0.94), rgba(5, 8, 20, 0.98));
+        border: 1px solid rgba(103, 243, 255, 0.16);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+        transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .game-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #22d3ee, #c084fc 52%, #22d3ee);
+        z-index: 2;
+      }
+
+      .game-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(103, 243, 255, 0.55);
+        box-shadow:
+          0 18px 46px rgba(0, 0, 0, 0.45),
+          0 0 32px rgba(34, 211, 238, 0.12);
+      }
+
+      .game-card .cover {
+        transition: transform 0.45s ease;
+      }
+
+      .game-card:hover .cover {
+        transform: scale(1.05);
+      }
+
+      .chip.is-active {
+        border-color: rgba(103, 243, 255, 0.75);
+        background: rgba(34, 211, 238, 0.14);
+        color: #ecfeff;
+        box-shadow:
+          inset 0 0 0 1px rgba(103, 243, 255, 0.25),
+          0 0 18px rgba(34, 211, 238, 0.15);
+      }
+
+      .buy-button {
+        background: #67f3ff;
+        color: #041018;
+        box-shadow:
+          0 0 0 1px rgba(103, 243, 255, 0.45),
+          0 10px 28px rgba(34, 211, 238, 0.25);
+        text-decoration: none;
+      }
+
+      .buy-button:hover {
+        background: #9af7ff;
+      }
+
+      .tg-button {
+        background: linear-gradient(135deg, #2AABEE, #229ED9);
+        color: #ffffff;
+        box-shadow:
+          0 0 0 1px rgba(56, 189, 248, 0.45),
+          0 8px 22px rgba(34, 158, 217, 0.28);
+        text-decoration: none;
+        transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      .tg-button:hover {
+        filter: brightness(1.08);
+        box-shadow:
+          0 0 0 1px rgba(125, 211, 252, 0.7),
+          0 10px 26px rgba(34, 158, 217, 0.42);
+      }
+
+      .wa-button {
+        background: linear-gradient(135deg, #25D366, #16a34a);
+        color: #03150a;
+        box-shadow:
+          0 0 0 1px rgba(74, 222, 128, 0.45),
+          0 8px 22px rgba(37, 211, 102, 0.26);
+        text-decoration: none;
+        transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      .wa-button:hover {
+        filter: brightness(1.08);
+        box-shadow:
+          0 0 0 1px rgba(134, 239, 172, 0.75),
+          0 10px 26px rgba(37, 211, 102, 0.4);
+      }
+
+      .ghost-button {
+        border: 1px solid rgba(103, 243, 255, 0.4);
+        color: #e7fbff;
+        background: rgba(8, 14, 28, 0.55);
+        text-decoration: none;
+      }
+
+      .ghost-button:hover {
+        border-color: rgba(192, 132, 252, 0.75);
+        background: rgba(168, 85, 247, 0.14);
+      }
+
+      .platform-fallback {
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+      }
+
+      .cover-fallback {
+        display: none;
+      }
+
+      .cover-fallback.is-shown {
+        display: flex;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .logo-frame {
+          animation: none;
+          box-shadow:
+            0 0 0 1px rgba(103, 243, 255, 0.4),
+            0 0 42px rgba(34, 211, 238, 0.28);
+        }
+
+        .game-card,
+        .game-card .cover {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="#catalog"
+      class="sr-only focus:not-sr-only focus:absolute focus:right-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-cyan-300 focus:px-4 focus:py-2 focus:text-slate-950"
+      >לדלג לקטלוג</a
+    >
+
+    <!-- Sticky Header with Integrated Live Search & Category Dropdown -->
+    <header id="top" class="sticky top-0 z-40 border-b border-cyan-300/15 bg-[#04060f]/90 backdrop-blur-xl">
+      <div class="mx-auto max-w-6xl px-4 py-3">
+        <div class="flex items-center justify-between gap-3">
+          <a href="#top" class="flex min-w-0 shrink-0 items-center gap-3 no-underline">
+            <img
+              src="assets/logo.jpg"
+              alt="CyberKeys Israel"
+              width="52"
+              height="52"
+              class="h-12 w-12 rounded-full object-cover ring-2 ring-cyan-300/50 sm:h-14 sm:w-14"
+            />
+            <span class="min-w-0 leading-tight">
+              <span class="font-display block text-sm tracking-[0.18em] text-cyan-200">CYBERKEYS</span>
+              <span class="block text-xs text-slate-400">חנות משחקי מחשב</span>
+            </span>
+          </a>
+
+          <!-- Sticky Header Search + Category Filter (Desktop) -->
+          <div class="hidden flex-1 items-center gap-2.5 px-2 lg:flex">
+            <div class="relative flex-1">
+              <label for="search" class="sr-only">חיפוש משחק לפי שם</label>
+              <svg
+                class="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-cyan-300/75"
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.5-3.5" />
+              </svg>
+              <input
+                id="search"
+                type="search"
+                placeholder="חיפוש משחק באנגלית (GTA V, Elden Ring, FC 24...)"
+                class="w-full rounded-xl border border-white/15 bg-slate-950/90 py-2 pl-3.5 pr-10 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-300"
+              />
+            </div>
+
+            <div class="relative min-w-[185px]">
+              <label for="category-select" class="sr-only">סינון לפי קטגוריה</label>
+              <select
+                id="category-select"
+                class="w-full cursor-pointer appearance-none rounded-xl border border-white/15 bg-slate-950/90 py-2 pl-8 pr-3.5 text-sm font-bold text-cyan-100 outline-none transition focus:border-cyan-300"
+              >
+                <option value="all">כל הקטגוריות</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-cyan-300"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                aria-hidden="true"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+          </div>
+
+          <nav class="hidden items-center gap-5 text-sm font-semibold xl:flex" aria-label="ניווט ראשי">
+            <a href="#catalog" class="text-slate-300 no-underline transition hover:text-white">הקטלוג</a>
+            <a href="#how" class="text-slate-300 no-underline transition hover:text-white">איך זה עובד</a>
+            <a href="#faq" class="text-slate-300 no-underline transition hover:text-white">שאלות</a>
+          </nav>
+
+          <div class="flex items-center gap-2">
+            <a
+              href="https://t.me/CyberKeys_IL"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="tg-button hidden items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-extrabold sm:inline-flex"
+              title="ערוץ הטלגרם הרשמי — 3,000+ מנויים"
+            >
+              <span class="h-2 w-2 rounded-full bg-emerald-300 animate-pulse" aria-hidden="true"></span>
+              <span>ערוץ 3,000+</span>
+            </a>
+            <a
+              href="https://t.me/Zero_IDD"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ghost-button hidden rounded-xl px-3.5 py-2 text-xs font-bold sm:inline-flex"
+              >Telegram</a
+            >
+            <a
+              href="https://wa.me/972500000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ghost-button hidden rounded-xl border-emerald-400/40 px-3.5 py-2 text-xs font-bold text-emerald-200 sm:inline-flex"
+              >WhatsApp</a
+            >
+            <button
+              type="button"
+              id="menu-toggle"
+              class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 text-white xl:hidden"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              aria-label="תפריט"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sticky Header Search + Category Filter (Mobile & Tablet) -->
+        <div class="mt-2.5 flex gap-2 lg:hidden">
+          <div class="relative flex-1">
+            <label for="search-mobile" class="sr-only">חיפוש משחק לפי שם</label>
+            <svg
+              class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-cyan-300/75"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+            <input
+              id="search-mobile"
+              type="search"
+              placeholder="חיפוש משחק באנגלית..."
+              class="w-full rounded-xl border border-white/15 bg-slate-950/90 py-2 pl-3 pr-9 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-300"
+            />
+          </div>
+          <div class="relative w-40 shrink-0 sm:w-48">
+            <label for="category-select-mobile" class="sr-only">סינון לפי קטגוריה</label>
+            <select
+              id="category-select-mobile"
+              class="w-full cursor-pointer appearance-none rounded-xl border border-white/15 bg-slate-950/90 py-2 pl-7 pr-3 text-xs font-bold text-cyan-100 outline-none transition focus:border-cyan-300 sm:text-sm"
+            >
+              <option value="all">כל הקטגוריות</option>
+            </select>
+            <svg
+              class="pointer-events-none absolute left-2 top-1/2 -translate-y-1/2 text-cyan-300"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden border-t border-white/10 xl:hidden">
+        <nav class="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 text-base font-semibold" aria-label="ניווט נייד">
+          <a href="#catalog" class="rounded-xl px-3 py-3 text-slate-100 no-underline hover:bg-white/5">המשחקים</a>
+          <a href="#how" class="rounded-xl px-3 py-3 text-slate-100 no-underline hover:bg-white/5">איך זה עובד</a>
+          <a href="#faq" class="rounded-xl px-3 py-3 text-slate-100 no-underline hover:bg-white/5">שאלות</a>
+          <a
+            href="https://t.me/CyberKeys_IL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-xl px-3 py-3 text-sky-300 no-underline hover:bg-white/5"
+            >ערוץ הטלגרם הרשמי (3,000+ מנויים) · <bdi dir="ltr">@CyberKeys_IL</bdi></a
+          >
+          <a
+            href="https://t.me/Zero_IDD"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-xl px-3 py-3 text-cyan-200 no-underline hover:bg-white/5"
+            >הזמנות בטלגרם · <bdi dir="ltr">@Zero_IDD</bdi></a
+          >
+          <a
+            href="https://wa.me/972500000000"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-xl px-3 py-3 text-emerald-300 no-underline hover:bg-white/5"
+            >וואטסאפ · <bdi dir="ltr">WhatsApp</bdi></a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:py-20">
+        <div>
+          <a
+            href="https://t.me/CyberKeys_IL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mb-4 inline-flex items-center gap-2.5 rounded-full border border-cyan-300/35 bg-cyan-400/10 px-4 py-1.5 text-xs font-extrabold text-cyan-100 no-underline transition hover:border-cyan-300 hover:bg-cyan-400/20"
+          >
+            <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true"></span>
+            <span>הצטרפו ל-<bdi>3,000+</bdi> גיימרים בערוץ הטלגרם הרשמי שלנו · <bdi dir="ltr">@CyberKeys_IL</bdi></span>
+          </a>
+          <p class="font-display text-xs tracking-[0.28em] text-cyan-200">CYBERKEYS ISRAEL</p>
+          <h1 class="mt-3 text-4xl font-black leading-[1.15] text-white sm:text-5xl lg:text-6xl">
+            מפתחות רשמיים למשחקי PC
+            <span class="mt-2 block bg-gradient-to-l from-cyan-300 via-sky-200 to-fuchsia-300 bg-clip-text text-transparent">
+              במחיר נמוך בהרבה
+            </span>
+          </h1>
+          <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-300">
+            100 משחקי המחשב המובילים בישראל — מפתחות רשמיים ל-<bdi>Steam</bdi>, <bdi>Epic</bdi>, <bdi>EA</bdi> ו-<bdi>Rockstar</bdi>
+            שמתאימים 100% להפעלה בישראל. משלמים ב-<bdi>Bit</bdi> או <bdi>PayBox</bdi> ומקבלים את המפתח מיד ב-<bdi>Telegram</bdi> או <bdi>WhatsApp</bdi>.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <a href="#catalog" class="buy-button inline-flex items-center justify-center rounded-xl px-6 py-3 text-base font-extrabold">לכל 100 המשחקים</a>
+            <a
+              href="https://t.me/CyberKeys_IL"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="tg-button inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-base font-extrabold"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M21.5 4.2 2.7 11.2c-.9.4-.9 1.1-.2 1.4l4.8 1.5 11-6.9c.5-.3 1 0 .6.4l-8.9 8 .3 4.6c.3.8.1 1.1-.5.7l-2.8-2.1-4.4 3.3-1.6-5.3 16.2-10.2c.8-.5 1.6-.2 1.3.6z" />
+              </svg>
+              <span>לערוץ הטלגרם (<bdi>3,000+</bdi>)</span>
+            </a>
+            <a
+              href="https://t.me/Zero_IDD"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ghost-button inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-bold"
+              >נציג אישי <bdi dir="ltr">@Zero_IDD</bdi></a
+            >
+          </div>
+          <dl class="mt-8 grid grid-cols-3 gap-3">
+            <div class="rounded-2xl border border-white/10 bg-white/[0.04] px-3 py-3 text-center">
+              <dt class="text-xs text-slate-400">קהילת טלגרם</dt>
+              <dd class="mt-1 text-lg font-black text-cyan-300" dir="ltr">3,000+</dd>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/[0.04] px-3 py-3 text-center">
+              <dt class="text-xs text-slate-400">אספקה</dt>
+              <dd class="mt-1 text-lg font-black text-white">מיידית</dd>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/[0.04] px-3 py-3 text-center">
+              <dt class="text-xs text-slate-400">קטלוג</dt>
+              <dd class="mt-1 text-lg font-black text-white">100 משחקים</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="mx-auto w-full max-w-md">
+          <img
+            src="assets/logo.jpg"
+            alt="הלוגו של CyberKeys Israel"
+            width="768"
+            height="768"
+            class="logo-frame aspect-square w-full object-cover"
+          />
+        </div>
+      </section>
+
+      <section class="px-4 pb-6" aria-label="יתרונות">
+        <ul class="mx-auto grid max-w-6xl grid-cols-2 gap-3 lg:grid-cols-4">
+          <li class="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
+            <p class="font-bold text-white">הפעלה בישראל 100%</p>
+            <p class="mt-1 text-sm leading-relaxed text-slate-400">מפתחות <bdi>Global / EMEA / Europe</bdi> בדוקים</p>
+          </li>
+          <li class="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
+            <p class="font-bold text-white">אספקה מיידית</p>
+            <p class="mt-1 text-sm leading-relaxed text-slate-400">המפתח נשלח מיד אחרי אישור התשלום</p>
+          </li>
+          <li class="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
+            <p class="font-bold text-white">Bit / PayBox</p>
+            <p class="mt-1 text-sm leading-relaxed text-slate-400">תשלום מקומי ב-<bdi>Telegram</bdi> או <bdi>WhatsApp</bdi></p>
+          </li>
+          <li class="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
+            <p class="font-bold text-white">תמיכה בעברית</p>
+            <p class="mt-1 text-sm leading-relaxed text-slate-400">מענה מהיר אצל <bdi>@Zero_IDD</bdi></p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="catalog" class="scroll-mt-32 mx-auto max-w-6xl px-4 py-12">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm font-bold text-cyan-300">הקטלוג המלא</p>
+            <h2 class="mt-1 text-3xl font-black text-white sm:text-4xl">המשחקים שלנו</h2>
+            <p class="mt-2 max-w-2xl text-slate-400">
+              מחיר החנות הרשמית ב-<bdi>Steam</bdi>, המחיר שלנו בשקלים, וכמה אתם חוסכים על כל מפתח.
+            </p>
+          </div>
+          <p id="results-count" class="whitespace-nowrap text-sm font-bold text-cyan-200" aria-live="polite"></p>
+        </div>
+
+        <div class="mt-5 flex flex-wrap items-center gap-2">
+          <div id="platform-filters" class="flex flex-wrap gap-2" role="group" aria-label="סינון לפי פלטפורמה"></div>
+        </div>
+
+        <div id="game-grid" class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <article class="game-card relative overflow-hidden rounded-3xl">
+            <div class="aspect-[2/3] animate-pulse bg-slate-800/80"></div>
+            <div class="space-y-3 p-4">
+              <div class="h-5 w-3/4 animate-pulse rounded bg-slate-800"></div>
+              <div class="h-8 w-1/2 animate-pulse rounded bg-slate-800"></div>
+              <div class="h-11 animate-pulse rounded-xl bg-slate-800"></div>
+            </div>
+          </article>
+          <article class="game-card relative hidden overflow-hidden rounded-3xl sm:block">
+            <div class="aspect-[2/3] animate-pulse bg-slate-800/80"></div>
+            <div class="space-y-3 p-4">
+              <div class="h-5 w-3/4 animate-pulse rounded bg-slate-800"></div>
+              <div class="h-8 w-1/2 animate-pulse rounded bg-slate-800"></div>
+              <div class="h-11 animate-pulse rounded-xl bg-slate-800"></div>
+            </div>
+          </article>
+          <article class="game-card relative hidden overflow-hidden rounded-3xl lg:block">
+            <div class="aspect-[2/3] animate-pulse bg-slate-800/80"></div>
+            <div class="space-y-3 p-4">
+              <div class="h-5 w-3/4 animate-pulse rounded bg-slate-800"></div>
+              <div class="h-8 w-1/2 animate-pulse rounded bg-slate-800"></div>
+              <div class="h-11 animate-pulse rounded-xl bg-slate-800"></div>
+            </div>
+          </article>
+          <article class="game-card relative hidden overflow-hidden rounded-3xl xl:block">
+            <div class="aspect-[2/3] animate-pulse bg-slate-800/80"></div>
+            <div class="space-y-3 p-4">
+              <div class="h-5 w-3/4 animate-pulse rounded bg-slate-800"></div>
+              <div class="h-8 w-1/2 animate-pulse rounded bg-slate-800"></div>
+              <div class="h-11 animate-pulse rounded-xl bg-slate-800"></div>
+            </div>
+          </article>
+        </div>
+
+        <p id="empty-state" class="mt-8 hidden rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-8 text-center text-slate-300">
+          לא נמצאו משחקים שתואמים לחיפוש או לקטגוריה שנבחרה.
+        </p>
+        <p id="catalog-error" class="mt-8 hidden rounded-2xl border border-rose-300/30 bg-rose-400/10 px-4 py-8 text-center leading-relaxed text-rose-100">
+          לא הצלחנו לטעון את הקטלוג. פתחו את האתר דרך שרת מקומי, ובדקו שקובץ games.json נמצא ליד index.html.
+        </p>
+      </section>
+
+      <section id="how" class="scroll-mt-32 px-4 py-8">
+        <div class="mx-auto max-w-6xl">
+          <p class="text-sm font-bold text-cyan-300">הזמנה מהירה</p>
+          <h2 class="mt-1 text-3xl font-black text-white sm:text-4xl">איך זה עובד</h2>
+          <ol class="mt-8 grid gap-4 md:grid-cols-3">
+            <li class="rounded-3xl border border-white/10 bg-white/[0.03] p-5">
+              <p class="font-display text-sm tracking-[0.2em] text-cyan-300">01</p>
+              <h3 class="mt-3 text-xl font-black text-white">בוחרים משחק</h3>
+              <p class="mt-2 leading-relaxed text-slate-400">מחפשים לפי שם או מסננים לפי קטגוריה ורואים מיד את החיסכון בשקלים.</p>
+            </li>
+            <li class="rounded-3xl border border-white/10 bg-white/[0.03] p-5">
+              <p class="font-display text-sm tracking-[0.2em] text-cyan-300">02</p>
+              <h3 class="mt-3 text-xl font-black text-white">בוחרים Telegram או WhatsApp</h3>
+              <p class="mt-2 leading-relaxed text-slate-400">
+                לוחצים על «רכישה ב-<bdi>Telegram</bdi>» או «רכישה ב-<bdi>WhatsApp</bdi>» ונפתחת הודעה מוכנה עם שם המשחק והמחיר.
+              </p>
+            </li>
+            <li class="rounded-3xl border border-white/10 bg-white/[0.03] p-5">
+              <p class="font-display text-sm tracking-[0.2em] text-cyan-300">03</p>
+              <h3 class="mt-3 text-xl font-black text-white">משלמים ומקבלים מפתח</h3>
+              <p class="mt-2 leading-relaxed text-slate-400">משלמים ב-<bdi>Bit</bdi> או <bdi>PayBox</bdi> ומקבלים מפתח רשמי להפעלה בישראל תוך דקות.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="faq" class="scroll-mt-32 mx-auto max-w-3xl px-4 py-16">
+        <p class="text-sm font-bold text-cyan-300">לפני ההזמנה</p>
+        <h2 class="mt-1 text-3xl font-black text-white">שאלות נפוצות</h2>
+        <div class="mt-6 space-y-3">
+          <details class="group rounded-2xl border border-white/10 bg-white/[0.03] p-5" open>
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-white">
+              האם המפתח רשמי ומתאים לישראל?
+              <span class="text-xl text-cyan-300 transition group-open:rotate-45" aria-hidden="true">+</span>
+            </summary>
+            <p class="mt-3 leading-relaxed text-slate-300">
+              כן. כל המפתחות הם מפתחות <bdi>Global</bdi>, <bdi>EMEA</bdi> או <bdi>Europe</bdi> שמופעלים ב-100% בחשבון ישראלי ב-<bdi>Steam</bdi>, <bdi>Epic</bdi>, <bdi>EA</bdi> או <bdi>Rockstar</bdi> בלי צורך ב-VPN.
+            </p>
+          </details>
+          <details class="group rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-white">
+              תוך כמה זמן מגיע המפתח?
+              <span class="text-xl text-cyan-300 transition group-open:rotate-45" aria-hidden="true">+</span>
+            </summary>
+            <p class="mt-3 leading-relaxed text-slate-300">אחרי אישור התשלום האספקה מיידית, בדרך כלל תוך כמה דקות בצ'אט.</p>
+          </details>
+          <details class="group rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-white">
+              איך משלמים?
+              <span class="text-xl text-cyan-300 transition group-open:rotate-45" aria-hidden="true">+</span>
+            </summary>
+            <p class="mt-3 leading-relaxed text-slate-300">ב-<bdi>Bit</bdi> או <bdi>PayBox</bdi>. בוחרים <bdi>Telegram</bdi> או <bdi>WhatsApp</bdi> על כרטיס המשחק ומתאמים תשלום מיד.</p>
+          </details>
+          <details class="group rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-white">
+              אפשר לבקש משחק שלא מופיע?
+              <span class="text-xl text-cyan-300 transition group-open:rotate-45" aria-hidden="true">+</span>
+            </summary>
+            <p class="mt-3 leading-relaxed text-slate-300">כן. שולחים את שם המשחק ב-<bdi>Telegram</bdi> או ב-<bdi>WhatsApp</bdi> ונחזור עם מחיר.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="px-4 pb-20">
+        <div class="mx-auto max-w-6xl rounded-3xl border border-cyan-300/20 bg-gradient-to-l from-cyan-400/10 via-transparent to-fuchsia-500/10 px-6 py-10 text-center">
+          <h2 class="text-3xl font-black text-white">לא מצאתם את המשחק?</h2>
+          <p class="mx-auto mt-3 max-w-lg text-slate-300">שלחו את השם ב-<bdi>Telegram</bdi> או ב-<bdi>WhatsApp</bdi> ונחזור עם מחיר ומפתח רשמי.</p>
+          <div class="mt-6 flex flex-wrap justify-center gap-3">
+            <a
+              href="https://t.me/Zero_IDD?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%97%D7%A4%D7%A9%20%D7%9E%D7%A9%D7%97%D7%A7%20%D7%A9%D7%9C%D7%90%20%D7%9E%D7%95%D7%A4%D7%99%D7%A2%20%D7%91%D7%A7%D7%98%D7%9C%D7%95%D7%92"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="tg-button inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-extrabold"
+              >בקשה ב-Telegram</a
+            >
+            <a
+              href="https://wa.me/972500000000?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%97%D7%A4%D7%A9%20%D7%9E%D7%A9%D7%97%D7%A7%20%D7%A9%D7%9C%D7%90%20%D7%9E%D7%95%D7%A4%D7%99%D7%A2%20%D7%91%D7%A7%D7%98%D7%9C%D7%95%D7%92"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="wa-button inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-extrabold"
+              >בקשה ב-WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10">
+      <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3">
+        <div class="flex items-center gap-3">
+          <img src="assets/logo.jpg" alt="" width="48" height="48" loading="lazy" class="h-12 w-12 rounded-full object-cover" />
+          <div>
+            <p class="font-display text-sm tracking-[0.16em] text-cyan-200">CYBERKEYS</p>
+            <p class="text-sm text-slate-400">חנות משחקי מחשב</p>
+          </div>
+        </div>
+        <nav class="flex flex-col gap-2 text-sm" aria-label="ניווט תחתון">
+          <a href="#catalog" class="text-slate-300 no-underline hover:text-white">המשחקים</a>
+          <a href="#how" class="text-slate-300 no-underline hover:text-white">איך זה עובד</a>
+          <a href="#faq" class="text-slate-300 no-underline hover:text-white">שאלות</a>
+        </nav>
+        <div class="text-sm text-slate-400 md:text-left">
+          <div class="flex flex-col gap-1 md:items-end">
+            <a href="https://t.me/CyberKeys_IL" target="_blank" rel="noopener noreferrer" class="font-bold text-sky-300 no-underline hover:text-sky-200" dir="ltr">t.me/CyberKeys_IL (3,000+)</a>
+            <a href="https://t.me/Zero_IDD" target="_blank" rel="noopener noreferrer" class="font-bold text-cyan-200 no-underline hover:text-cyan-100" dir="ltr">@Zero_IDD</a>
+          </div>
+          <p class="mt-2">תשלום ב-Bit או PayBox</p>
+          <p class="mt-4 text-xs text-slate-500">© 2026 CyberKeys Israel</p>
+        </div>
+      </div>
+    </footer>
+
+    <template id="chip-template">
+      <button
+        type="button"
+        class="chip rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-bold text-slate-200 transition hover:border-cyan-300/40 hover:text-white"
+        data-platform=""
+      ></button>
+    </template>
+
+    <template id="card-template">
+      <article class="game-card relative flex h-full flex-col overflow-hidden rounded-3xl">
+        <div class="relative aspect-[2/3] overflow-hidden bg-slate-900">
+          <img
+            data-cover
+            loading="lazy"
+            decoding="async"
+            referrerpolicy="no-referrer"
+            class="cover h-full w-full object-cover"
+            alt=""
+          />
+          <div
+            data-fallback
+            class="cover-fallback absolute inset-0 items-center justify-center bg-gradient-to-br from-slate-950 to-cyan-950 p-6 text-center font-display text-sm tracking-wide text-cyan-100"
+          ></div>
+          <span
+            data-discount
+            dir="ltr"
+            class="absolute right-3 top-3 rounded-full bg-slate-950/85 px-2.5 py-1 text-xs font-black text-cyan-200 ring-1 ring-cyan-300/40"
+          ></span>
+          <span
+            data-category-badge
+            dir="ltr"
+            class="absolute left-3 top-3 rounded-full bg-slate-950/85 px-2.5 py-1 text-[11px] font-bold text-fuchsia-200 ring-1 ring-fuchsia-300/35"
+          ></span>
+          <div class="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#050814] to-transparent"></div>
+        </div>
+        <div class="flex flex-1 flex-col p-4">
+          <h3 data-title dir="ltr" class="line-clamp-2 text-right text-base font-black leading-snug text-white"></h3>
+          <div class="mt-2 flex flex-wrap items-center gap-1.5">
+            <p
+              class="inline-flex w-fit items-center gap-1.5 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-2.5 py-0.5 text-xs font-bold text-cyan-100"
+              dir="ltr"
+            >
+              <span data-platform-icon class="inline-flex text-cyan-200"></span>
+              <span data-platform-name></span>
+            </p>
+          </div>
+
+          <div class="mt-auto pt-4">
+            <div class="flex items-end justify-between gap-3">
+              <div>
+                <p class="text-xs font-medium text-cyan-200/80">המחיר שלנו</p>
+                <p data-price dir="ltr" class="text-2xl font-black leading-none text-cyan-300 sm:text-3xl"></p>
+              </div>
+              <div>
+                <p class="text-xs text-slate-500">מחיר רשמי</p>
+                <p data-official dir="ltr" class="text-sm font-semibold text-slate-400 line-through decoration-slate-500"></p>
+              </div>
+            </div>
+            <p
+              data-save
+              class="mt-2.5 w-fit whitespace-nowrap rounded-full border border-emerald-300/30 bg-emerald-400/10 px-3 py-0.5 text-xs font-extrabold text-emerald-300"
+            ></p>
+
+            <!-- Dual Compact Side-by-Side Buy Buttons -->
+            <div class="mt-3.5 grid grid-cols-2 gap-2">
+              <a
+                data-buy-telegram
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tg-button inline-flex items-center justify-center gap-1.5 rounded-xl px-2.5 py-2.5 text-xs font-extrabold"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="shrink-0">
+                  <path d="M21.5 4.2 2.7 11.2c-.9.4-.9 1.1-.2 1.4l4.8 1.5 11-6.9c.5-.3 1 0 .6.4l-8.9 8 .3 4.6c.3.8.1 1.1-.5.7l-2.8-2.1-4.4 3.3-1.6-5.3 16.2-10.2c.8-.5 1.6-.2 1.3.6z" />
+                </svg>
+                <span class="truncate">רכישה ב-<bdi>Telegram</bdi></span>
+              </a>
+              <a
+                data-buy-whatsapp
+                target="_blank"
+                rel="noopener noreferrer"
+                class="wa-button inline-flex items-center justify-center gap-1.5 rounded-xl px-2.5 py-2.5 text-xs font-extrabold"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="shrink-0">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.93-4.36-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.39-.24.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.56.34.07.12.07.7-.17 1.38z" />
+                </svg>
+                <span class="truncate">רכישה ב-<bdi>WhatsApp</bdi></span>
+              </a>
+            </div>
+
+            <a
+              data-steam
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2.5 block text-center text-xs font-semibold text-slate-400 no-underline hover:text-cyan-200"
+              >לעמוד הרשמי ב-<bdi>Steam</bdi></a
+            >
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <noscript>
+      <p class="px-4 py-6 text-center text-amber-200">כדי לראות את הקטלוג צריך להפעיל JavaScript. המשחקים נטענים מקובץ games.json.</p>
+    </noscript>
+    <script src="script.js" defer></script>
+  </body>
+</html>
