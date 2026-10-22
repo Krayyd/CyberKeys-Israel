@@ -17,7 +17,7 @@ const path = require("path");
 
 const CHANNEL_ID = process.env.CHANNEL_ID || "@CyberKeys_IL";
 const BOT_TOKEN = process.env.BOT_TOKEN || "";
-const SITE_URL = process.env.SITE_URL || ""; // можно указать ссылку Netlify после публикации
+const SITE_URL = process.env.SITE_URL || "https://cyberkeys-israel.netlify.app/";
 
 const GAMES_FILE = path.join(__dirname, "games.json");
 const LOG_FILE = path.join(__dirname, "posted-log.json");
@@ -91,7 +91,9 @@ function buildKspCaptionHTML(game) {
     `היי, אני רוצה לקנות את המשחק ${game.title} ב-${game.cyberkeysPrice}₪`
   )}`;
 
-  const siteLine = SITE_URL ? `\n🌐 לקטלוג המלא באתר: ${SITE_URL}` : "";
+  const siteLine = SITE_URL
+    ? `\n🌐 <a href="${SITE_URL}">לקטלוג המלא באתר CyberKeys Israel »</a>`
+    : "";
 
   return [
     `${emoji} <b>המשחק ${game.title} למחשב — רק ב-${game.cyberkeysPrice}₪ במקום <s>${game.officialPrice}₪</s>! (חיסכון של ${saved}₪!)</b>`,
@@ -172,6 +174,7 @@ async function postNextGame() {
 async function main() {
   const args = process.argv.slice(2);
   const isOnce = args.includes("--once") || !args.some((a) => a.startsWith("--interval"));
+  const delayFirst = args.includes("--delay-first");
   const intervalArg = args.find((a) => a.startsWith("--interval="));
   const hours = intervalArg ? Math.max(0.5, Number(intervalArg.split("=")[1]) || 4) : 4;
 
@@ -181,7 +184,9 @@ async function main() {
   }
 
   console.log(`Запущен автопостер CyberKeys Israel. Интервал: каждые ${hours} ч. Канал: ${CHANNEL_ID}`);
-  await postNextGame();
+  if (!delayFirst) {
+    await postNextGame();
+  }
   setInterval(() => {
     postNextGame().catch((err) => console.error("[Ошибка автопостинга]:", err.message));
   }, hours * 3600 * 1000);
