@@ -6,7 +6,8 @@
     "Cyberpunk 2077",
     "Red Dead Redemption 2",
     "Elden Ring",
-    "God of War (2018)"
+    "God of War (2018)",
+    "Hogwarts Legacy"
   ],
   "history": [
     {
@@ -40,6 +41,11 @@
     {
       "title": "God of War (2018)",
       "note": "Опубликовано утром через панель ksp-posts.html"
+    },
+    {
+      "title": "Hogwarts Legacy",
+      "messageId": 18,
+      "postedAt": "2026-10-22T10:37:53.442Z"
     }
   ]
 }
