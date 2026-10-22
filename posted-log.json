@@ -7,7 +7,8 @@
     "Red Dead Redemption 2",
     "Elden Ring",
     "God of War (2018)",
-    "Hogwarts Legacy"
+    "Hogwarts Legacy",
+    "God of War Ragnarök"
   ],
   "history": [
     {
@@ -46,6 +47,11 @@
       "title": "Hogwarts Legacy",
       "messageId": 18,
       "postedAt": "2026-10-22T10:37:53.442Z"
+    },
+    {
+      "title": "God of War Ragnarök",
+      "messageId": 19,
+      "postedAt": "2026-10-22T12:53:24.532Z"
     }
   ]
 }
