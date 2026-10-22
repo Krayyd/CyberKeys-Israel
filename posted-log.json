@@ -3,7 +3,10 @@
     "Grand Theft Auto V",
     "Resident Evil Village",
     "EA Sports FC 24",
-    "Cyberpunk 2077"
+    "Cyberpunk 2077",
+    "Red Dead Redemption 2",
+    "Elden Ring",
+    "God of War (2018)"
   ],
   "history": [
     {
@@ -25,6 +28,18 @@
     {
       "title": "Cyberpunk 2077",
       "note": "Опубликовано через бота @CyberKeysIL_post_bot"
+    },
+    {
+      "title": "Red Dead Redemption 2",
+      "note": "Опубликовано через бота @CyberKeysIL_post_bot со скрытой ссылкой на каталог"
+    },
+    {
+      "title": "Elden Ring",
+      "note": "Опубликовано утром через панель ksp-posts.html"
+    },
+    {
+      "title": "God of War (2018)",
+      "note": "Опубликовано утром через панель ksp-posts.html"
     }
   ]
 }
