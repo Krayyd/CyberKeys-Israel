@@ -1,0 +1,37 @@
+name: CyberKeys Telegram Autoposter
+
+on:
+  schedule:
+    # Запускается каждые 4 часа (в 06:00, 10:00, 14:00, 18:00, 22:00 по Израилю)
+    - cron: "0 3,7,11,15,19 * * *"
+  workflow_dispatch: # Позволяет запустить пост вручную одной кнопкой в GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  post-next-game:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Publish next game to @CyberKeys_IL
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHANNEL_ID: "@CyberKeys_IL"
+          SITE_URL: "https://cyberkeys-israel.netlify.app/"
+        run: node autopost.js --once
+
+      - name: Save updated posted-log.json back to repo
+        run: |
+          git config user.name "CyberKeys Autoposter"
+          git config user.email "autoposter@cyberkeys.local"
+          git add posted-log.json
+          git diff --staged --quiet || git commit -m "chore: mark next game as posted"
+          git push
