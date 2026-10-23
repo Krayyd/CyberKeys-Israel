@@ -11,7 +11,8 @@
     "God of War Ragnarök",
     "Marvel's Spider-Man Remastered",
     "Marvel's Spider-Man: Miles Morales",
-    "Horizon Zero Dawn"
+    "Horizon Zero Dawn",
+    "Horizon Forbidden West"
   ],
   "history": [
     {
@@ -70,6 +71,11 @@
       "title": "Horizon Zero Dawn",
       "messageId": 23,
       "postedAt": "2026-10-23T08:25:06.554Z"
+    },
+    {
+      "title": "Horizon Forbidden West",
+      "messageId": 24,
+      "postedAt": "2026-10-23T15:41:27.544Z"
     }
   ]
 }
