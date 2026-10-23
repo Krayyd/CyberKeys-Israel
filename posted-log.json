@@ -12,7 +12,8 @@
     "Marvel's Spider-Man Remastered",
     "Marvel's Spider-Man: Miles Morales",
     "Horizon Zero Dawn",
-    "Horizon Forbidden West"
+    "Horizon Forbidden West",
+    "The Witcher 3: Wild Hunt"
   ],
   "history": [
     {
@@ -76,6 +77,11 @@
       "title": "Horizon Forbidden West",
       "messageId": 24,
       "postedAt": "2026-10-23T15:41:27.544Z"
+    },
+    {
+      "title": "The Witcher 3: Wild Hunt",
+      "messageId": 25,
+      "postedAt": "2026-10-23T21:57:47.182Z"
     }
   ]
 }
