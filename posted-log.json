@@ -15,7 +15,8 @@
     "Horizon Forbidden West",
     "The Witcher 3: Wild Hunt",
     "Mortal Kombat 1",
-    "Tekken 8"
+    "Tekken 8",
+    "Helldivers 2"
   ],
   "history": [
     {
@@ -94,6 +95,11 @@
       "title": "Tekken 8",
       "messageId": 27,
       "postedAt": "2026-10-24T14:23:49.897Z"
+    },
+    {
+      "title": "Helldivers 2",
+      "messageId": 28,
+      "postedAt": "2026-10-24T18:00:30.501Z"
     }
   ]
 }
