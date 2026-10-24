@@ -14,7 +14,8 @@
     "Horizon Zero Dawn",
     "Horizon Forbidden West",
     "The Witcher 3: Wild Hunt",
-    "Mortal Kombat 1"
+    "Mortal Kombat 1",
+    "Tekken 8"
   ],
   "history": [
     {
@@ -88,6 +89,11 @@
       "title": "Mortal Kombat 1",
       "messageId": 26,
       "postedAt": "2026-10-24T08:00:02.015Z"
+    },
+    {
+      "title": "Tekken 8",
+      "messageId": 27,
+      "postedAt": "2026-10-24T14:23:49.897Z"
     }
   ]
 }
