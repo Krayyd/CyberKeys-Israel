@@ -18,7 +18,8 @@
     "Tekken 8",
     "Helldivers 2",
     "Forza Horizon 5",
-    "Rust"
+    "Rust",
+    "DayZ"
   ],
   "history": [
     {
@@ -112,6 +113,11 @@
       "title": "Rust",
       "messageId": 30,
       "postedAt": "2026-10-25T08:16:39.727Z"
+    },
+    {
+      "title": "DayZ",
+      "messageId": 31,
+      "postedAt": "2026-10-25T14:55:00.477Z"
     }
   ]
 }
