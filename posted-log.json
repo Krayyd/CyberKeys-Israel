@@ -19,7 +19,8 @@
     "Helldivers 2",
     "Forza Horizon 5",
     "Rust",
-    "DayZ"
+    "DayZ",
+    "It Takes Two"
   ],
   "history": [
     {
@@ -118,6 +119,11 @@
       "title": "DayZ",
       "messageId": 31,
       "postedAt": "2026-10-25T14:55:00.477Z"
+    },
+    {
+      "title": "It Takes Two",
+      "messageId": 32,
+      "postedAt": "2026-10-25T18:18:27.459Z"
     }
   ]
 }
