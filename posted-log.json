@@ -17,7 +17,8 @@
     "Mortal Kombat 1",
     "Tekken 8",
     "Helldivers 2",
-    "Forza Horizon 5"
+    "Forza Horizon 5",
+    "Rust"
   ],
   "history": [
     {
@@ -106,6 +107,11 @@
       "title": "Forza Horizon 5",
       "messageId": 29,
       "postedAt": "2026-10-24T21:28:05.109Z"
+    },
+    {
+      "title": "Rust",
+      "messageId": 30,
+      "postedAt": "2026-10-25T08:16:39.727Z"
     }
   ]
 }
