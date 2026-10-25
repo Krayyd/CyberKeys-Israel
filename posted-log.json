@@ -20,7 +20,8 @@
     "Forza Horizon 5",
     "Rust",
     "DayZ",
-    "It Takes Two"
+    "It Takes Two",
+    "Fallout 4"
   ],
   "history": [
     {
@@ -124,6 +125,11 @@
       "title": "It Takes Two",
       "messageId": 32,
       "postedAt": "2026-10-25T18:18:27.459Z"
+    },
+    {
+      "title": "Fallout 4",
+      "messageId": 33,
+      "postedAt": "2026-10-25T21:35:45.738Z"
     }
   ]
 }
