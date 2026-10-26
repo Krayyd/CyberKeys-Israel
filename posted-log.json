@@ -23,7 +23,8 @@
     "It Takes Two",
     "Fallout 4",
     "The Elder Scrolls V: Skyrim Special Edition",
-    "No Man's Sky"
+    "No Man's Sky",
+    "Baldur's Gate 3"
   ],
   "history": [
     {
@@ -142,6 +143,11 @@
       "title": "No Man's Sky",
       "messageId": 35,
       "postedAt": "2026-10-26T17:14:24.535Z"
+    },
+    {
+      "title": "Baldur's Gate 3",
+      "messageId": 36,
+      "postedAt": "2026-10-26T23:04:31.520Z"
     }
   ]
 }
