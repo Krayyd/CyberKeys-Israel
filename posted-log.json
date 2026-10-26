@@ -21,7 +21,8 @@
     "Rust",
     "DayZ",
     "It Takes Two",
-    "Fallout 4"
+    "Fallout 4",
+    "The Elder Scrolls V: Skyrim Special Edition"
   ],
   "history": [
     {
@@ -130,6 +131,11 @@
       "title": "Fallout 4",
       "messageId": 33,
       "postedAt": "2026-10-25T21:35:45.738Z"
+    },
+    {
+      "title": "The Elder Scrolls V: Skyrim Special Edition",
+      "messageId": 34,
+      "postedAt": "2026-10-26T08:43:56.030Z"
     }
   ]
 }
