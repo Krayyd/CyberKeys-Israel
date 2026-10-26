@@ -22,7 +22,8 @@
     "DayZ",
     "It Takes Two",
     "Fallout 4",
-    "The Elder Scrolls V: Skyrim Special Edition"
+    "The Elder Scrolls V: Skyrim Special Edition",
+    "No Man's Sky"
   ],
   "history": [
     {
@@ -136,6 +137,11 @@
       "title": "The Elder Scrolls V: Skyrim Special Edition",
       "messageId": 34,
       "postedAt": "2026-10-26T08:43:56.030Z"
+    },
+    {
+      "title": "No Man's Sky",
+      "messageId": 35,
+      "postedAt": "2026-10-26T17:14:24.535Z"
     }
   ]
 }
