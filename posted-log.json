@@ -26,7 +26,8 @@
     "No Man's Sky",
     "Baldur's Gate 3",
     "Palworld",
-    "Lethal Company"
+    "Lethal Company",
+    "Terraria"
   ],
   "history": [
     {
@@ -160,6 +161,11 @@
       "title": "Lethal Company",
       "messageId": 38,
       "postedAt": "2026-10-27T16:20:11.547Z"
+    },
+    {
+      "title": "Terraria",
+      "messageId": 39,
+      "postedAt": "2026-10-27T22:53:56.933Z"
     }
   ]
 }
