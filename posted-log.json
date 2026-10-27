@@ -24,7 +24,8 @@
     "Fallout 4",
     "The Elder Scrolls V: Skyrim Special Edition",
     "No Man's Sky",
-    "Baldur's Gate 3"
+    "Baldur's Gate 3",
+    "Palworld"
   ],
   "history": [
     {
@@ -148,6 +149,11 @@
       "title": "Baldur's Gate 3",
       "messageId": 36,
       "postedAt": "2026-10-26T23:04:31.520Z"
+    },
+    {
+      "title": "Palworld",
+      "messageId": 37,
+      "postedAt": "2026-10-27T08:49:55.173Z"
     }
   ]
 }
