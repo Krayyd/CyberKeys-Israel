@@ -28,7 +28,8 @@
     "Palworld",
     "Lethal Company",
     "Terraria",
-    "Stardew Valley"
+    "Stardew Valley",
+    "Hades"
   ],
   "history": [
     {
@@ -172,6 +173,11 @@
       "title": "Stardew Valley",
       "messageId": 40,
       "postedAt": "2026-10-28T09:30:06.657Z"
+    },
+    {
+      "title": "Hades",
+      "messageId": 41,
+      "postedAt": "2026-10-28T17:04:28.950Z"
     }
   ]
 }
