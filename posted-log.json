@@ -27,7 +27,8 @@
     "Baldur's Gate 3",
     "Palworld",
     "Lethal Company",
-    "Terraria"
+    "Terraria",
+    "Stardew Valley"
   ],
   "history": [
     {
@@ -166,6 +167,11 @@
       "title": "Terraria",
       "messageId": 39,
       "postedAt": "2026-10-27T22:53:56.933Z"
+    },
+    {
+      "title": "Stardew Valley",
+      "messageId": 40,
+      "postedAt": "2026-10-28T09:30:06.657Z"
     }
   ]
 }
