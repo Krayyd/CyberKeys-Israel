@@ -29,7 +29,8 @@
     "Lethal Company",
     "Terraria",
     "Stardew Valley",
-    "Hades"
+    "Hades",
+    "Hades II"
   ],
   "history": [
     {
@@ -178,6 +179,11 @@
       "title": "Hades",
       "messageId": 41,
       "postedAt": "2026-10-28T17:04:28.950Z"
+    },
+    {
+      "title": "Hades II",
+      "messageId": 42,
+      "postedAt": "2026-10-28T23:04:11.659Z"
     }
   ]
 }
