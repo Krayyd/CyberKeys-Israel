@@ -31,7 +31,8 @@
     "Stardew Valley",
     "Hades",
     "Hades II",
-    "Dead Cells"
+    "Dead Cells",
+    "Hollow Knight"
   ],
   "history": [
     {
@@ -190,6 +191,11 @@
       "title": "Dead Cells",
       "messageId": 43,
       "postedAt": "2026-10-29T09:43:06.939Z"
+    },
+    {
+      "title": "Hollow Knight",
+      "messageId": 44,
+      "postedAt": "2026-10-29T17:22:22.617Z"
     }
   ]
 }
