@@ -30,7 +30,8 @@
     "Terraria",
     "Stardew Valley",
     "Hades",
-    "Hades II"
+    "Hades II",
+    "Dead Cells"
   ],
   "history": [
     {
@@ -184,6 +185,11 @@
       "title": "Hades II",
       "messageId": 42,
       "postedAt": "2026-10-28T23:04:11.659Z"
+    },
+    {
+      "title": "Dead Cells",
+      "messageId": 43,
+      "postedAt": "2026-10-29T09:43:06.939Z"
     }
   ]
 }
