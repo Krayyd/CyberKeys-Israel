@@ -34,7 +34,8 @@
     "Dead Cells",
     "Hollow Knight",
     "Subnautica",
-    "Subnautica: Below Zero"
+    "Subnautica: Below Zero",
+    "Dying Light 2 Stay Human"
   ],
   "history": [
     {
@@ -208,6 +209,11 @@
       "title": "Subnautica: Below Zero",
       "messageId": 46,
       "postedAt": "2026-10-30T09:49:36.665Z"
+    },
+    {
+      "title": "Dying Light 2 Stay Human",
+      "messageId": 47,
+      "postedAt": "2026-10-30T16:58:40.260Z"
     }
   ]
 }
