@@ -33,7 +33,8 @@
     "Hades II",
     "Dead Cells",
     "Hollow Knight",
-    "Subnautica"
+    "Subnautica",
+    "Subnautica: Below Zero"
   ],
   "history": [
     {
@@ -202,6 +203,11 @@
       "title": "Subnautica",
       "messageId": 45,
       "postedAt": "2026-10-29T23:12:25.541Z"
+    },
+    {
+      "title": "Subnautica: Below Zero",
+      "messageId": 46,
+      "postedAt": "2026-10-30T09:49:36.665Z"
     }
   ]
 }
