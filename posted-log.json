@@ -36,7 +36,8 @@
     "Subnautica",
     "Subnautica: Below Zero",
     "Dying Light 2 Stay Human",
-    "Dying Light"
+    "Dying Light",
+    "Resident Evil 4 Remake"
   ],
   "history": [
     {
@@ -220,6 +221,11 @@
       "title": "Dying Light",
       "messageId": 48,
       "postedAt": "2026-10-30T22:54:04.938Z"
+    },
+    {
+      "title": "Resident Evil 4 Remake",
+      "messageId": 49,
+      "postedAt": "2026-10-31T09:28:18.468Z"
     }
   ]
 }
