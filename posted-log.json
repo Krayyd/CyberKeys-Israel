@@ -38,7 +38,8 @@
     "Dying Light 2 Stay Human",
     "Dying Light",
     "Resident Evil 4 Remake",
-    "Resident Evil 2 Remake"
+    "Resident Evil 2 Remake",
+    "Resident Evil 3 Remake"
   ],
   "history": [
     {
@@ -232,6 +233,11 @@
       "title": "Resident Evil 2 Remake",
       "messageId": 50,
       "postedAt": "2026-10-31T16:00:06.600Z"
+    },
+    {
+      "title": "Resident Evil 3 Remake",
+      "messageId": 51,
+      "postedAt": "2026-10-31T22:23:33.709Z"
     }
   ]
 }
