@@ -40,7 +40,8 @@
     "Resident Evil 4 Remake",
     "Resident Evil 2 Remake",
     "Resident Evil 3 Remake",
-    "Resident Evil 7: Biohazard"
+    "Resident Evil 7: Biohazard",
+    "Devil May Cry 5"
   ],
   "history": [
     {
@@ -244,6 +245,11 @@
       "title": "Resident Evil 7: Biohazard",
       "messageId": 52,
       "postedAt": "2026-11-01T10:17:30.307Z"
+    },
+    {
+      "title": "Devil May Cry 5",
+      "messageId": 53,
+      "postedAt": "2026-11-01T17:04:01.149Z"
     }
   ]
 }
