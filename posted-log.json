@@ -41,7 +41,8 @@
     "Resident Evil 2 Remake",
     "Resident Evil 3 Remake",
     "Resident Evil 7: Biohazard",
-    "Devil May Cry 5"
+    "Devil May Cry 5",
+    "Monster Hunter: World"
   ],
   "history": [
     {
@@ -250,6 +251,11 @@
       "title": "Devil May Cry 5",
       "messageId": 53,
       "postedAt": "2026-11-01T17:04:01.149Z"
+    },
+    {
+      "title": "Monster Hunter: World",
+      "messageId": 54,
+      "postedAt": "2026-11-01T22:40:20.382Z"
     }
   ]
 }
