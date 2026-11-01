@@ -39,7 +39,8 @@
     "Dying Light",
     "Resident Evil 4 Remake",
     "Resident Evil 2 Remake",
-    "Resident Evil 3 Remake"
+    "Resident Evil 3 Remake",
+    "Resident Evil 7: Biohazard"
   ],
   "history": [
     {
@@ -238,6 +239,11 @@
       "title": "Resident Evil 3 Remake",
       "messageId": 51,
       "postedAt": "2026-10-31T22:23:33.709Z"
+    },
+    {
+      "title": "Resident Evil 7: Biohazard",
+      "messageId": 52,
+      "postedAt": "2026-11-01T10:17:30.307Z"
     }
   ]
 }
