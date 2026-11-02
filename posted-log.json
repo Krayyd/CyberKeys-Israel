@@ -43,7 +43,8 @@
     "Resident Evil 7: Biohazard",
     "Devil May Cry 5",
     "Monster Hunter: World",
-    "Monster Hunter Wilds"
+    "Monster Hunter Wilds",
+    "Doom Eternal"
   ],
   "history": [
     {
@@ -262,6 +263,11 @@
       "title": "Monster Hunter Wilds",
       "messageId": 55,
       "postedAt": "2026-11-02T10:49:36.186Z"
+    },
+    {
+      "title": "Doom Eternal",
+      "messageId": 56,
+      "postedAt": "2026-11-02T20:41:58.778Z"
     }
   ]
 }
