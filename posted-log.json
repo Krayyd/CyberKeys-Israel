@@ -42,7 +42,8 @@
     "Resident Evil 3 Remake",
     "Resident Evil 7: Biohazard",
     "Devil May Cry 5",
-    "Monster Hunter: World"
+    "Monster Hunter: World",
+    "Monster Hunter Wilds"
   ],
   "history": [
     {
@@ -256,6 +257,11 @@
       "title": "Monster Hunter: World",
       "messageId": 54,
       "postedAt": "2026-11-01T22:40:20.382Z"
+    },
+    {
+      "title": "Monster Hunter Wilds",
+      "messageId": 55,
+      "postedAt": "2026-11-02T10:49:36.186Z"
     }
   ]
 }
