@@ -45,7 +45,8 @@
     "Monster Hunter: World",
     "Monster Hunter Wilds",
     "Doom Eternal",
-    "Fallout 76"
+    "Fallout 76",
+    "Cities: Skylines II"
   ],
   "history": [
     {
@@ -274,6 +275,11 @@
       "title": "Fallout 76",
       "messageId": 57,
       "postedAt": "2026-11-03T10:40:37.839Z"
+    },
+    {
+      "title": "Cities: Skylines II",
+      "messageId": 58,
+      "postedAt": "2026-11-03T18:20:17.579Z"
     }
   ]
 }
