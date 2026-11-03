@@ -44,7 +44,8 @@
     "Devil May Cry 5",
     "Monster Hunter: World",
     "Monster Hunter Wilds",
-    "Doom Eternal"
+    "Doom Eternal",
+    "Fallout 76"
   ],
   "history": [
     {
@@ -268,6 +269,11 @@
       "title": "Doom Eternal",
       "messageId": 56,
       "postedAt": "2026-11-02T20:41:58.778Z"
+    },
+    {
+      "title": "Fallout 76",
+      "messageId": 57,
+      "postedAt": "2026-11-03T10:40:37.839Z"
     }
   ]
 }
