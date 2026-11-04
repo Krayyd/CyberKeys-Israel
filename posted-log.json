@@ -48,7 +48,8 @@
     "Fallout 76",
     "Cities: Skylines II",
     "The Sims 4",
-    "Halo Infinite"
+    "Halo Infinite",
+    "Garry's Mod"
   ],
   "history": [
     {
@@ -292,6 +293,11 @@
       "title": "Halo Infinite",
       "messageId": 60,
       "postedAt": "2026-11-04T10:43:11.181Z"
+    },
+    {
+      "title": "Garry's Mod",
+      "messageId": 61,
+      "postedAt": "2026-11-04T18:32:47.188Z"
     }
   ]
 }
