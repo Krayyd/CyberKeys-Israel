@@ -47,7 +47,8 @@
     "Doom Eternal",
     "Fallout 76",
     "Cities: Skylines II",
-    "The Sims 4"
+    "The Sims 4",
+    "Halo Infinite"
   ],
   "history": [
     {
@@ -286,6 +287,11 @@
       "title": "The Sims 4",
       "messageId": 59,
       "postedAt": "2026-11-03T23:55:48.526Z"
+    },
+    {
+      "title": "Halo Infinite",
+      "messageId": 60,
+      "postedAt": "2026-11-04T10:43:11.181Z"
     }
   ]
 }
