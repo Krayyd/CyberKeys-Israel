@@ -49,7 +49,8 @@
     "Cities: Skylines II",
     "The Sims 4",
     "Halo Infinite",
-    "Garry's Mod"
+    "Garry's Mod",
+    "Ark: Survival Ascended"
   ],
   "history": [
     {
@@ -298,6 +299,11 @@
       "title": "Garry's Mod",
       "messageId": 61,
       "postedAt": "2026-11-04T18:32:47.188Z"
+    },
+    {
+      "title": "Ark: Survival Ascended",
+      "messageId": 62,
+      "postedAt": "2026-11-05T00:15:49.513Z"
     }
   ]
 }
