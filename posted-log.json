@@ -50,7 +50,8 @@
     "The Sims 4",
     "Halo Infinite",
     "Garry's Mod",
-    "Ark: Survival Ascended"
+    "Ark: Survival Ascended",
+    "Sea of Thieves"
   ],
   "history": [
     {
@@ -304,6 +305,11 @@
       "title": "Ark: Survival Ascended",
       "messageId": 62,
       "postedAt": "2026-11-05T00:15:49.513Z"
+    },
+    {
+      "title": "Sea of Thieves",
+      "messageId": 63,
+      "postedAt": "2026-11-05T10:39:02.269Z"
     }
   ]
 }
