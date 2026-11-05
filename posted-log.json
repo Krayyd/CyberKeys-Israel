@@ -51,7 +51,8 @@
     "Halo Infinite",
     "Garry's Mod",
     "Ark: Survival Ascended",
-    "Sea of Thieves"
+    "Sea of Thieves",
+    "Hunt: Showdown 1896"
   ],
   "history": [
     {
@@ -310,6 +311,11 @@
       "title": "Sea of Thieves",
       "messageId": 63,
       "postedAt": "2026-11-05T10:39:02.269Z"
+    },
+    {
+      "title": "Hunt: Showdown 1896",
+      "messageId": 64,
+      "postedAt": "2026-11-05T18:37:59.947Z"
     }
   ]
 }
