@@ -54,7 +54,8 @@
     "Sea of Thieves",
     "Hunt: Showdown 1896",
     "Tom Clancy's Rainbow Six Siege",
-    "Destiny 2"
+    "Destiny 2",
+    "Sekiro: Shadows Die Twice"
   ],
   "history": [
     {
@@ -328,6 +329,11 @@
       "title": "Destiny 2",
       "messageId": 66,
       "postedAt": "2026-11-06T10:39:23.693Z"
+    },
+    {
+      "title": "Sekiro: Shadows Die Twice",
+      "messageId": 67,
+      "postedAt": "2026-11-06T17:52:06.938Z"
     }
   ]
 }
