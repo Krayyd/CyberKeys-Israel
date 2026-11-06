@@ -53,7 +53,8 @@
     "Ark: Survival Ascended",
     "Sea of Thieves",
     "Hunt: Showdown 1896",
-    "Tom Clancy's Rainbow Six Siege"
+    "Tom Clancy's Rainbow Six Siege",
+    "Destiny 2"
   ],
   "history": [
     {
@@ -322,6 +323,11 @@
       "title": "Tom Clancy's Rainbow Six Siege",
       "messageId": 65,
       "postedAt": "2026-11-06T00:00:01.558Z"
+    },
+    {
+      "title": "Destiny 2",
+      "messageId": 66,
+      "postedAt": "2026-11-06T10:39:23.693Z"
     }
   ]
 }
