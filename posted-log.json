@@ -52,7 +52,8 @@
     "Garry's Mod",
     "Ark: Survival Ascended",
     "Sea of Thieves",
-    "Hunt: Showdown 1896"
+    "Hunt: Showdown 1896",
+    "Tom Clancy's Rainbow Six Siege"
   ],
   "history": [
     {
@@ -316,6 +317,11 @@
       "title": "Hunt: Showdown 1896",
       "messageId": 64,
       "postedAt": "2026-11-05T18:37:59.947Z"
+    },
+    {
+      "title": "Tom Clancy's Rainbow Six Siege",
+      "messageId": 65,
+      "postedAt": "2026-11-06T00:00:01.558Z"
     }
   ]
 }
