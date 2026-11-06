@@ -55,7 +55,8 @@
     "Hunt: Showdown 1896",
     "Tom Clancy's Rainbow Six Siege",
     "Destiny 2",
-    "Sekiro: Shadows Die Twice"
+    "Sekiro: Shadows Die Twice",
+    "Dark Souls III"
   ],
   "history": [
     {
@@ -334,6 +335,11 @@
       "title": "Sekiro: Shadows Die Twice",
       "messageId": 67,
       "postedAt": "2026-11-06T17:52:06.938Z"
+    },
+    {
+      "title": "Dark Souls III",
+      "messageId": 68,
+      "postedAt": "2026-11-06T23:41:17.730Z"
     }
   ]
 }
