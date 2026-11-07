@@ -58,7 +58,8 @@
     "Sekiro: Shadows Die Twice",
     "Dark Souls III",
     "Dark Souls Remastered",
-    "Persona 5 Royal"
+    "Persona 5 Royal",
+    "Persona 3 Reload"
   ],
   "history": [
     {
@@ -352,6 +353,11 @@
       "title": "Persona 5 Royal",
       "messageId": 70,
       "postedAt": "2026-11-07T16:47:05.549Z"
+    },
+    {
+      "title": "Persona 3 Reload",
+      "messageId": 71,
+      "postedAt": "2026-11-07T22:37:23.764Z"
     }
   ]
 }
