@@ -56,7 +56,8 @@
     "Tom Clancy's Rainbow Six Siege",
     "Destiny 2",
     "Sekiro: Shadows Die Twice",
-    "Dark Souls III"
+    "Dark Souls III",
+    "Dark Souls Remastered"
   ],
   "history": [
     {
@@ -340,6 +341,11 @@
       "title": "Dark Souls III",
       "messageId": 68,
       "postedAt": "2026-11-06T23:41:17.730Z"
+    },
+    {
+      "title": "Dark Souls Remastered",
+      "messageId": 69,
+      "postedAt": "2026-11-07T09:50:39.982Z"
     }
   ]
 }
