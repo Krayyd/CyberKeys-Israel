@@ -57,7 +57,8 @@
     "Destiny 2",
     "Sekiro: Shadows Die Twice",
     "Dark Souls III",
-    "Dark Souls Remastered"
+    "Dark Souls Remastered",
+    "Persona 5 Royal"
   ],
   "history": [
     {
@@ -346,6 +347,11 @@
       "title": "Dark Souls Remastered",
       "messageId": 69,
       "postedAt": "2026-11-07T09:50:39.982Z"
+    },
+    {
+      "title": "Persona 5 Royal",
+      "messageId": 70,
+      "postedAt": "2026-11-07T16:47:05.549Z"
     }
   ]
 }
