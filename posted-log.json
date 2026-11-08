@@ -59,7 +59,8 @@
     "Dark Souls III",
     "Dark Souls Remastered",
     "Persona 5 Royal",
-    "Persona 3 Reload"
+    "Persona 3 Reload",
+    "Yakuza: Like a Dragon"
   ],
   "history": [
     {
@@ -358,6 +359,11 @@
       "title": "Persona 3 Reload",
       "messageId": 71,
       "postedAt": "2026-11-07T22:37:23.764Z"
+    },
+    {
+      "title": "Yakuza: Like a Dragon",
+      "messageId": 72,
+      "postedAt": "2026-11-08T10:05:04.356Z"
     }
   ]
 }
