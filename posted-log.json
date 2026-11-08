@@ -60,7 +60,8 @@
     "Dark Souls Remastered",
     "Persona 5 Royal",
     "Persona 3 Reload",
-    "Yakuza: Like a Dragon"
+    "Yakuza: Like a Dragon",
+    "Like a Dragon: Infinite Wealth"
   ],
   "history": [
     {
@@ -364,6 +365,11 @@
       "title": "Yakuza: Like a Dragon",
       "messageId": 72,
       "postedAt": "2026-11-08T10:05:04.356Z"
+    },
+    {
+      "title": "Like a Dragon: Infinite Wealth",
+      "messageId": 73,
+      "postedAt": "2026-11-08T16:58:38.669Z"
     }
   ]
 }
