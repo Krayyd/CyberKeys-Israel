@@ -61,7 +61,8 @@
     "Persona 5 Royal",
     "Persona 3 Reload",
     "Yakuza: Like a Dragon",
-    "Like a Dragon: Infinite Wealth"
+    "Like a Dragon: Infinite Wealth",
+    "NieR: Automata"
   ],
   "history": [
     {
@@ -370,6 +371,11 @@
       "title": "Like a Dragon: Infinite Wealth",
       "messageId": 73,
       "postedAt": "2026-11-08T16:58:38.669Z"
+    },
+    {
+      "title": "NieR: Automata",
+      "messageId": 74,
+      "postedAt": "2026-11-08T22:44:16.080Z"
     }
   ]
 }
