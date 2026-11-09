@@ -63,7 +63,8 @@
     "Yakuza: Like a Dragon",
     "Like a Dragon: Infinite Wealth",
     "NieR: Automata",
-    "Final Fantasy VII Remake Intergrade"
+    "Final Fantasy VII Remake Intergrade",
+    "Starfield"
   ],
   "history": [
     {
@@ -382,6 +383,11 @@
       "title": "Final Fantasy VII Remake Intergrade",
       "messageId": 75,
       "postedAt": "2026-11-09T11:13:29.971Z"
+    },
+    {
+      "title": "Starfield",
+      "messageId": 76,
+      "postedAt": "2026-11-09T23:44:12.026Z"
     }
   ]
 }
