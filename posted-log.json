@@ -62,7 +62,8 @@
     "Persona 3 Reload",
     "Yakuza: Like a Dragon",
     "Like a Dragon: Infinite Wealth",
-    "NieR: Automata"
+    "NieR: Automata",
+    "Final Fantasy VII Remake Intergrade"
   ],
   "history": [
     {
@@ -376,6 +377,11 @@
       "title": "NieR: Automata",
       "messageId": 74,
       "postedAt": "2026-11-08T22:44:16.080Z"
+    },
+    {
+      "title": "Final Fantasy VII Remake Intergrade",
+      "messageId": 75,
+      "postedAt": "2026-11-09T11:13:29.971Z"
     }
   ]
 }
