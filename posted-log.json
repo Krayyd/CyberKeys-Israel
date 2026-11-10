@@ -65,7 +65,8 @@
     "NieR: Automata",
     "Final Fantasy VII Remake Intergrade",
     "Starfield",
-    "Star Wars Jedi: Survivor"
+    "Star Wars Jedi: Survivor",
+    "Star Wars Jedi: Fallen Order"
   ],
   "history": [
     {
@@ -394,6 +395,11 @@
       "title": "Star Wars Jedi: Survivor",
       "messageId": 77,
       "postedAt": "2026-11-10T10:55:58.094Z"
+    },
+    {
+      "title": "Star Wars Jedi: Fallen Order",
+      "messageId": 78,
+      "postedAt": "2026-11-10T18:35:01.808Z"
     }
   ]
 }
