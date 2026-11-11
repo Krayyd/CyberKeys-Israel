@@ -68,7 +68,8 @@
     "Star Wars Jedi: Survivor",
     "Star Wars Jedi: Fallen Order",
     "Dead Space Remake",
-    "Alan Wake 2"
+    "Alan Wake 2",
+    "The Outlast Trials"
   ],
   "history": [
     {
@@ -412,6 +413,11 @@
       "title": "Alan Wake 2",
       "messageId": 80,
       "postedAt": "2026-11-11T10:37:00.842Z"
+    },
+    {
+      "title": "The Outlast Trials",
+      "messageId": 81,
+      "postedAt": "2026-11-11T18:30:44.044Z"
     }
   ]
 }
