@@ -67,7 +67,8 @@
     "Starfield",
     "Star Wars Jedi: Survivor",
     "Star Wars Jedi: Fallen Order",
-    "Dead Space Remake"
+    "Dead Space Remake",
+    "Alan Wake 2"
   ],
   "history": [
     {
@@ -406,6 +407,11 @@
       "title": "Dead Space Remake",
       "messageId": 79,
       "postedAt": "2026-11-10T23:57:46.927Z"
+    },
+    {
+      "title": "Alan Wake 2",
+      "messageId": 80,
+      "postedAt": "2026-11-11T10:37:00.842Z"
     }
   ]
 }
