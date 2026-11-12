@@ -69,7 +69,8 @@
     "Star Wars Jedi: Fallen Order",
     "Dead Space Remake",
     "Alan Wake 2",
-    "The Outlast Trials"
+    "The Outlast Trials",
+    "Phasmophobia"
   ],
   "history": [
     {
@@ -418,6 +419,11 @@
       "title": "The Outlast Trials",
       "messageId": 81,
       "postedAt": "2026-11-11T18:30:44.044Z"
+    },
+    {
+      "title": "Phasmophobia",
+      "messageId": 82,
+      "postedAt": "2026-11-12T01:24:54.022Z"
     }
   ]
 }
