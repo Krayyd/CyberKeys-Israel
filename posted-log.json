@@ -71,7 +71,8 @@
     "Alan Wake 2",
     "The Outlast Trials",
     "Phasmophobia",
-    "Sons of the Forest"
+    "Sons of the Forest",
+    "Raft"
   ],
   "history": [
     {
@@ -430,6 +431,11 @@
       "title": "Sons of the Forest",
       "messageId": 83,
       "postedAt": "2026-11-12T10:50:23.859Z"
+    },
+    {
+      "title": "Raft",
+      "messageId": 84,
+      "postedAt": "2026-11-12T18:46:31.816Z"
     }
   ]
 }
