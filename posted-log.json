@@ -70,7 +70,8 @@
     "Dead Space Remake",
     "Alan Wake 2",
     "The Outlast Trials",
-    "Phasmophobia"
+    "Phasmophobia",
+    "Sons of the Forest"
   ],
   "history": [
     {
@@ -424,6 +425,11 @@
       "title": "Phasmophobia",
       "messageId": 82,
       "postedAt": "2026-11-12T01:24:54.022Z"
+    },
+    {
+      "title": "Sons of the Forest",
+      "messageId": 83,
+      "postedAt": "2026-11-12T10:50:23.859Z"
     }
   ]
 }
