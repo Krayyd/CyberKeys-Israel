@@ -72,7 +72,8 @@
     "The Outlast Trials",
     "Phasmophobia",
     "Sons of the Forest",
-    "Raft"
+    "Raft",
+    "The Forest"
   ],
   "history": [
     {
@@ -436,6 +437,11 @@
       "title": "Raft",
       "messageId": 84,
       "postedAt": "2026-11-12T18:46:31.816Z"
+    },
+    {
+      "title": "The Forest",
+      "messageId": 85,
+      "postedAt": "2026-11-13T00:02:07.483Z"
     }
   ]
 }
