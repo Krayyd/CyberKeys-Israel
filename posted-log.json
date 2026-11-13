@@ -73,7 +73,8 @@
     "Phasmophobia",
     "Sons of the Forest",
     "Raft",
-    "The Forest"
+    "The Forest",
+    "Left 4 Dead 2"
   ],
   "history": [
     {
@@ -442,6 +443,11 @@
       "title": "The Forest",
       "messageId": 85,
       "postedAt": "2026-11-13T00:02:07.483Z"
+    },
+    {
+      "title": "Left 4 Dead 2",
+      "messageId": 86,
+      "postedAt": "2026-11-13T10:45:56.532Z"
     }
   ]
 }
