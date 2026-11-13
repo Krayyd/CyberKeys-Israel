@@ -74,7 +74,8 @@
     "Sons of the Forest",
     "Raft",
     "The Forest",
-    "Left 4 Dead 2"
+    "Left 4 Dead 2",
+    "Borderlands 3"
   ],
   "history": [
     {
@@ -448,6 +449,11 @@
       "title": "Left 4 Dead 2",
       "messageId": 86,
       "postedAt": "2026-11-13T10:45:56.532Z"
+    },
+    {
+      "title": "Borderlands 3",
+      "messageId": 87,
+      "postedAt": "2026-11-13T18:27:56.242Z"
     }
   ]
 }
