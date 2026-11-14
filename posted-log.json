@@ -77,7 +77,8 @@
     "Left 4 Dead 2",
     "Borderlands 3",
     "Tiny Tina's Wonderlands",
-    "BioShock Infinite"
+    "BioShock Infinite",
+    "Dishonored 2"
   ],
   "history": [
     {
@@ -466,6 +467,11 @@
       "title": "BioShock Infinite",
       "messageId": 89,
       "postedAt": "2026-11-14T10:00:29.898Z"
+    },
+    {
+      "title": "Dishonored 2",
+      "messageId": 90,
+      "postedAt": "2026-11-14T16:55:09.642Z"
     }
   ]
 }
