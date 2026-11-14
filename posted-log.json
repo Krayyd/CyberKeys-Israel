@@ -76,7 +76,8 @@
     "The Forest",
     "Left 4 Dead 2",
     "Borderlands 3",
-    "Tiny Tina's Wonderlands"
+    "Tiny Tina's Wonderlands",
+    "BioShock Infinite"
   ],
   "history": [
     {
@@ -460,6 +461,11 @@
       "title": "Tiny Tina's Wonderlands",
       "messageId": 88,
       "postedAt": "2026-11-14T00:17:15.263Z"
+    },
+    {
+      "title": "BioShock Infinite",
+      "messageId": 89,
+      "postedAt": "2026-11-14T10:00:29.898Z"
     }
   ]
 }
