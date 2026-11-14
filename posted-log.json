@@ -78,7 +78,8 @@
     "Borderlands 3",
     "Tiny Tina's Wonderlands",
     "BioShock Infinite",
-    "Dishonored 2"
+    "Dishonored 2",
+    "Prey"
   ],
   "history": [
     {
@@ -472,6 +473,11 @@
       "title": "Dishonored 2",
       "messageId": 90,
       "postedAt": "2026-11-14T16:55:09.642Z"
+    },
+    {
+      "title": "Prey",
+      "messageId": 91,
+      "postedAt": "2026-11-14T22:54:47.442Z"
     }
   ]
 }
