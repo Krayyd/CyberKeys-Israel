@@ -79,7 +79,8 @@
     "Tiny Tina's Wonderlands",
     "BioShock Infinite",
     "Dishonored 2",
-    "Prey"
+    "Prey",
+    "Control"
   ],
   "history": [
     {
@@ -478,6 +479,11 @@
       "title": "Prey",
       "messageId": 91,
       "postedAt": "2026-11-14T22:54:47.442Z"
+    },
+    {
+      "title": "Control",
+      "messageId": 92,
+      "postedAt": "2026-11-15T10:37:00.620Z"
     }
   ]
 }
