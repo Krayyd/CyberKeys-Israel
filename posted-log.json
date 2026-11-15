@@ -80,7 +80,8 @@
     "BioShock Infinite",
     "Dishonored 2",
     "Prey",
-    "Control"
+    "Control",
+    "Death Stranding"
   ],
   "history": [
     {
@@ -484,6 +485,11 @@
       "title": "Control",
       "messageId": 92,
       "postedAt": "2026-11-15T10:37:00.620Z"
+    },
+    {
+      "title": "Death Stranding",
+      "messageId": 93,
+      "postedAt": "2026-11-15T17:38:02.148Z"
     }
   ]
 }
