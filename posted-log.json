@@ -81,7 +81,8 @@
     "Dishonored 2",
     "Prey",
     "Control",
-    "Death Stranding"
+    "Death Stranding",
+    "Detroit: Become Human"
   ],
   "history": [
     {
@@ -490,6 +491,11 @@
       "title": "Death Stranding",
       "messageId": 93,
       "postedAt": "2026-11-15T17:38:02.148Z"
+    },
+    {
+      "title": "Detroit: Become Human",
+      "messageId": 94,
+      "postedAt": "2026-11-15T23:21:09.234Z"
     }
   ]
 }
