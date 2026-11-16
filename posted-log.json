@@ -82,7 +82,8 @@
     "Prey",
     "Control",
     "Death Stranding",
-    "Detroit: Become Human"
+    "Detroit: Become Human",
+    "Heavy Rain"
   ],
   "history": [
     {
@@ -496,6 +497,11 @@
       "title": "Detroit: Become Human",
       "messageId": 94,
       "postedAt": "2026-11-15T23:21:09.234Z"
+    },
+    {
+      "title": "Heavy Rain",
+      "messageId": 95,
+      "postedAt": "2026-11-16T10:53:10.379Z"
     }
   ]
 }
