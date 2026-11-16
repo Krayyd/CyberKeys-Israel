@@ -83,7 +83,8 @@
     "Control",
     "Death Stranding",
     "Detroit: Become Human",
-    "Heavy Rain"
+    "Heavy Rain",
+    "Beyond: Two Souls"
   ],
   "history": [
     {
@@ -502,6 +503,11 @@
       "title": "Heavy Rain",
       "messageId": 95,
       "postedAt": "2026-11-16T10:53:10.379Z"
+    },
+    {
+      "title": "Beyond: Two Souls",
+      "messageId": 96,
+      "postedAt": "2026-11-16T20:53:48.909Z"
     }
   ]
 }
