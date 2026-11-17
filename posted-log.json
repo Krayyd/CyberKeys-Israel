@@ -85,7 +85,8 @@
     "Detroit: Become Human",
     "Heavy Rain",
     "Beyond: Two Souls",
-    "Mafia: Definitive Edition"
+    "Mafia: Definitive Edition",
+    "L.A. Noire"
   ],
   "history": [
     {
@@ -514,6 +515,11 @@
       "title": "Mafia: Definitive Edition",
       "messageId": 97,
       "postedAt": "2026-11-17T11:38:47.957Z"
+    },
+    {
+      "title": "L.A. Noire",
+      "messageId": 98,
+      "postedAt": "2026-11-17T22:49:42.070Z"
     }
   ]
 }
