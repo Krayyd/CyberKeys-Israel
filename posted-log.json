@@ -84,7 +84,8 @@
     "Death Stranding",
     "Detroit: Become Human",
     "Heavy Rain",
-    "Beyond: Two Souls"
+    "Beyond: Two Souls",
+    "Mafia: Definitive Edition"
   ],
   "history": [
     {
@@ -508,6 +509,11 @@
       "title": "Beyond: Two Souls",
       "messageId": 96,
       "postedAt": "2026-11-16T20:53:48.909Z"
+    },
+    {
+      "title": "Mafia: Definitive Edition",
+      "messageId": 97,
+      "postedAt": "2026-11-17T11:38:47.957Z"
     }
   ]
 }
