@@ -87,7 +87,8 @@
     "Beyond: Two Souls",
     "Mafia: Definitive Edition",
     "L.A. Noire",
-    "Max Payne 3"
+    "Max Payne 3",
+    "Hitman World of Assassination"
   ],
   "history": [
     {
@@ -526,6 +527,11 @@
       "title": "Max Payne 3",
       "messageId": 99,
       "postedAt": "2026-11-18T11:25:09.312Z"
+    },
+    {
+      "title": "Hitman World of Assassination",
+      "messageId": 100,
+      "postedAt": "2026-11-18T22:31:03.139Z"
     }
   ]
 }
