@@ -86,7 +86,8 @@
     "Heavy Rain",
     "Beyond: Two Souls",
     "Mafia: Definitive Edition",
-    "L.A. Noire"
+    "L.A. Noire",
+    "Max Payne 3"
   ],
   "history": [
     {
@@ -520,6 +521,11 @@
       "title": "L.A. Noire",
       "messageId": 98,
       "postedAt": "2026-11-17T22:49:42.070Z"
+    },
+    {
+      "title": "Max Payne 3",
+      "messageId": 99,
+      "postedAt": "2026-11-18T11:25:09.312Z"
     }
   ]
 }
