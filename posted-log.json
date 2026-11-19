@@ -89,7 +89,8 @@
     "L.A. Noire",
     "Max Payne 3",
     "Hitman World of Assassination",
-    "Assassin's Creed Valhalla"
+    "Assassin's Creed Valhalla",
+    "Assassin's Creed Mirage"
   ],
   "history": [
     {
@@ -538,6 +539,11 @@
       "title": "Assassin's Creed Valhalla",
       "messageId": 101,
       "postedAt": "2026-11-19T11:23:29.115Z"
+    },
+    {
+      "title": "Assassin's Creed Mirage",
+      "messageId": 102,
+      "postedAt": "2026-11-19T22:37:59.239Z"
     }
   ]
 }
