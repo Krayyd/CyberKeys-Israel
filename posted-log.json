@@ -88,7 +88,8 @@
     "Mafia: Definitive Edition",
     "L.A. Noire",
     "Max Payne 3",
-    "Hitman World of Assassination"
+    "Hitman World of Assassination",
+    "Assassin's Creed Valhalla"
   ],
   "history": [
     {
@@ -532,6 +533,11 @@
       "title": "Hitman World of Assassination",
       "messageId": 100,
       "postedAt": "2026-11-18T22:31:03.139Z"
+    },
+    {
+      "title": "Assassin's Creed Valhalla",
+      "messageId": 101,
+      "postedAt": "2026-11-19T11:23:29.115Z"
     }
   ]
 }
