@@ -90,7 +90,8 @@
     "Max Payne 3",
     "Hitman World of Assassination",
     "Assassin's Creed Valhalla",
-    "Assassin's Creed Mirage"
+    "Assassin's Creed Mirage",
+    "Far Cry 6"
   ],
   "history": [
     {
@@ -544,6 +545,11 @@
       "title": "Assassin's Creed Mirage",
       "messageId": 102,
       "postedAt": "2026-11-19T22:37:59.239Z"
+    },
+    {
+      "title": "Far Cry 6",
+      "messageId": 103,
+      "postedAt": "2026-11-20T11:13:15.142Z"
     }
   ]
 }
