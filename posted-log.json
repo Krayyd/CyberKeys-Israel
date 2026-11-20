@@ -91,7 +91,8 @@
     "Hitman World of Assassination",
     "Assassin's Creed Valhalla",
     "Assassin's Creed Mirage",
-    "Far Cry 6"
+    "Far Cry 6",
+    "Mount & Blade II: Bannerlord"
   ],
   "history": [
     {
@@ -550,6 +551,11 @@
       "title": "Far Cry 6",
       "messageId": 103,
       "postedAt": "2026-11-20T11:13:15.142Z"
+    },
+    {
+      "title": "Mount & Blade II: Bannerlord",
+      "messageId": 104,
+      "postedAt": "2026-11-20T22:11:58.109Z"
     }
   ]
 }
