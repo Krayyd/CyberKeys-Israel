@@ -94,7 +94,8 @@
     "Far Cry 6",
     "Mount & Blade II: Bannerlord",
     "Civilization VI",
-    "Age of Empires IV"
+    "Age of Empires IV",
+    "Total War: Warhammer III"
   ],
   "history": [
     {
@@ -568,6 +569,11 @@
       "title": "Age of Empires IV",
       "messageId": 106,
       "postedAt": "2026-11-21T17:55:31.596Z"
+    },
+    {
+      "title": "Total War: Warhammer III",
+      "messageId": 107,
+      "postedAt": "2026-11-21T23:44:08.812Z"
     }
   ]
 }
