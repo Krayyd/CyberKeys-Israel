@@ -92,7 +92,8 @@
     "Assassin's Creed Valhalla",
     "Assassin's Creed Mirage",
     "Far Cry 6",
-    "Mount & Blade II: Bannerlord"
+    "Mount & Blade II: Bannerlord",
+    "Civilization VI"
   ],
   "history": [
     {
@@ -556,6 +557,11 @@
       "title": "Mount & Blade II: Bannerlord",
       "messageId": 104,
       "postedAt": "2026-11-20T22:11:58.109Z"
+    },
+    {
+      "title": "Civilization VI",
+      "messageId": 105,
+      "postedAt": "2026-11-21T10:50:20.225Z"
     }
   ]
 }
