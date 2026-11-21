@@ -93,7 +93,8 @@
     "Assassin's Creed Mirage",
     "Far Cry 6",
     "Mount & Blade II: Bannerlord",
-    "Civilization VI"
+    "Civilization VI",
+    "Age of Empires IV"
   ],
   "history": [
     {
@@ -562,6 +563,11 @@
       "title": "Civilization VI",
       "messageId": 105,
       "postedAt": "2026-11-21T10:50:20.225Z"
+    },
+    {
+      "title": "Age of Empires IV",
+      "messageId": 106,
+      "postedAt": "2026-11-21T17:55:31.596Z"
     }
   ]
 }
