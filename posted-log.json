@@ -95,7 +95,8 @@
     "Mount & Blade II: Bannerlord",
     "Civilization VI",
     "Age of Empires IV",
-    "Total War: Warhammer III"
+    "Total War: Warhammer III",
+    "Euro Truck Simulator 2"
   ],
   "history": [
     {
@@ -574,6 +575,11 @@
       "title": "Total War: Warhammer III",
       "messageId": 107,
       "postedAt": "2026-11-21T23:44:08.812Z"
+    },
+    {
+      "title": "Euro Truck Simulator 2",
+      "messageId": 108,
+      "postedAt": "2026-11-22T10:58:19.006Z"
     }
   ]
 }
