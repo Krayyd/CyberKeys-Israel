@@ -96,7 +96,8 @@
     "Civilization VI",
     "Age of Empires IV",
     "Total War: Warhammer III",
-    "Euro Truck Simulator 2"
+    "Euro Truck Simulator 2",
+    "Microsoft Flight Simulator"
   ],
   "history": [
     {
@@ -580,6 +581,11 @@
       "title": "Euro Truck Simulator 2",
       "messageId": 108,
       "postedAt": "2026-11-22T10:58:19.006Z"
+    },
+    {
+      "title": "Microsoft Flight Simulator",
+      "messageId": 109,
+      "postedAt": "2026-11-22T18:25:40.388Z"
     }
   ]
 }
