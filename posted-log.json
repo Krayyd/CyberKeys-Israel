@@ -97,7 +97,8 @@
     "Age of Empires IV",
     "Total War: Warhammer III",
     "Euro Truck Simulator 2",
-    "Microsoft Flight Simulator"
+    "Microsoft Flight Simulator",
+    "Assetto Corsa"
   ],
   "history": [
     {
@@ -586,6 +587,11 @@
       "title": "Microsoft Flight Simulator",
       "messageId": 109,
       "postedAt": "2026-11-22T18:25:40.388Z"
+    },
+    {
+      "title": "Assetto Corsa",
+      "messageId": 110,
+      "postedAt": "2026-11-23T00:08:07.725Z"
     }
   ]
 }
