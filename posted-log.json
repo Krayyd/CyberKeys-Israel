@@ -98,7 +98,8 @@
     "Total War: Warhammer III",
     "Euro Truck Simulator 2",
     "Microsoft Flight Simulator",
-    "Assetto Corsa"
+    "Assetto Corsa",
+    "NBA 2K24"
   ],
   "history": [
     {
@@ -592,6 +593,11 @@
       "title": "Assetto Corsa",
       "messageId": 110,
       "postedAt": "2026-11-23T00:08:07.725Z"
+    },
+    {
+      "title": "NBA 2K24",
+      "messageId": 111,
+      "postedAt": "2026-11-23T12:05:47.997Z"
     }
   ]
 }
